@@ -38,6 +38,7 @@ Homepage: http://www.mate-desktop.org/
 
 Package: caja
 Architecture: any
+Multi-Arch: foreign
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          shared-mime-info,
@@ -50,6 +51,7 @@ Depends: ${shlibs:Depends},
 Suggests: gstreamer0.10-tools,
           meld,
           engrampa
+Breaks: libcaja-extension (<< 1.6.2)
 Description: file manager for the MATE desktop
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
@@ -85,7 +87,9 @@ Description: file manager for the MATE desktop (debugging symbols)
 Package: libcaja-extension1
 Section: libs
 Architecture: any
-Pre-Depends: multiarch-support
+Multi-Arch: same
+Pre-Depends: ${misc:Pre-Depends},
+             multiarch-support,
 Depends: ${shlibs:Depends},
          ${misc:Depends}
 Replaces: libcaja-extension
@@ -101,6 +105,7 @@ Description: libraries for caja components
 Package: libcaja-extension-dev
 Section: libdevel
 Architecture: any
+Multi-Arch: foreign
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libcaja-extension1 (= ${binary:Version}),
