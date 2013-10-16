@@ -6,3 +6,4 @@
 05-fix-crash-during-file-rename-in-external-devices.patch
 06-properly-free-GHashTable-in-properties-window.patch
 07-fix-icons-dir.patch
+08-add-manpage-for-caja-autorun-software.patch

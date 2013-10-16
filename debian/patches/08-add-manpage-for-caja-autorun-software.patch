@@ -1,0 +1,42 @@
+From 70559a30ba34d71d0d9567457c3ec20de7d25fb7 Mon Sep 17 00:00:00 2001
+From: Stefano Karapetsas <stefano@karapetsas.com>
+Date: Thu, 26 Sep 2013 09:34:43 +0000
+Subject: Add manpage for caja-autorun-software
+
+Closes #114
+https://github.com/mate-desktop/mate-file-manager/issues/114
+---
+diff --git a/docs/Makefile.am b/docs/Makefile.am
+index 71c07ba..6244750 100644
+--- a/docs/Makefile.am
++++ b/docs/Makefile.am
+@@ -4,6 +4,7 @@ SUBDIRS = reference
+ 
+ man_MANS = \
+ 	caja.1 \
++	caja-autorun-software.1 \
+ 	caja-connect-server.1 \
+ 	caja-file-management-properties.1 \
+ 	$(NULL)
+diff --git a/docs/caja-autorun-software.1 b/docs/caja-autorun-software.1
+new file mode 100644
+index 0000000..b079708
+--- a/dev/null
++++ b/docs/caja-autorun-software.1
+@@ -0,0 +1,14 @@
++.IX Title "caja-autorun-software 1"
++.TH caja-autorun-software 1 "26 Sep 2013"
++.SH "NAME"
++caja\-autorun\-software
++.SH "SYNOPSIS"
++.IX Header "SYNOPSIS"
++This executable is part of the package 'caja': The \s-1MATE\s0 Desktop File Manager
++.SH "DESCRIPTION"
++.IX Header "DESCRIPTION"
++This package contains Caja, the file manager for the \s-1MATE\s0
++Desktop Environment.
++.SH "LICENSE"
++.IX Header "LICENSE"
++\&\s-1GPL\s0 v2 or later
+--
+cgit 
