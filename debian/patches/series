@@ -5,3 +5,4 @@
 04-fix-segfaults-with-thumbnails-frames.patch
 05-fix-crash-during-file-rename-in-external-devices.patch
 06-properly-free-GHashTable-in-properties-window.patch
+07-fix-icons-dir.patch
