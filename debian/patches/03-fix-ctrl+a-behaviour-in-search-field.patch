@@ -1,0 +1,56 @@
+From 749f7bf29e6c7b04d93eb54f2079455bf730a0c0 Mon Sep 17 00:00:00 2001
+From: infirit <infirit@gmail.com>
+Date: Sat, 21 Sep 2013 00:18:45 +0000
+Subject: Fix ctrl+a behaviour in search field
+
+From: Cosimo Cecchi <cosimoc@gnome.org>
+Even when we're not renaming, process events for focused GtkEditables
+before activating the menu accels and mnemonics.
+
+https://bugzilla.gnome.org/show_bug.cgi?id=619529
+Caja bug: https://github.com/mate-desktop/mate-file-manager/issues/97
+---
+diff --git a/src/caja-window.c b/src/caja-window.c
+index 782e260..28e1ea3 100644
+--- a/src/caja-window.c
++++ b/src/caja-window.c
+@@ -1094,10 +1094,37 @@ caja_window_key_press_event (GtkWidget *widget,
+                              GdkEventKey *event)
+ {
+     CajaWindow *window;
++    CajaWindowSlot *active_slot;
++    CajaView *view;
++    GtkWidget *focus_widget;
+     int i;
+ 
+     window = CAJA_WINDOW (widget);
+ 
++    active_slot = caja_window_get_active_slot (window);
++    view = active_slot->content_view;
++
++    if (view != NULL && focus_widget != NULL &&
++        GTK_IS_EDITABLE (focus_widget)) {
++            /* if we have input focus on a GtkEditable (e.g. a GtkEntry), forward
++             * the event to it before activating accelerator bindings too.
++             */
++            if (gtk_window_propagate_key_event (GTK_WINDOW (window), event)) {
++                return TRUE;
++            }
++    }
++
++    focus_widget = gtk_window_get_focus (GTK_WINDOW (window));
++    if (view != NULL && focus_widget != NULL &&
++        GTK_IS_EDITABLE (focus_widget)) {
++            /* if we have input focus on a GtkEditable (e.g. a GtkEntry), forward
++             * the event to it before activating accelerator bindings too.
++             */
++            if (gtk_window_propagate_key_event (GTK_WINDOW (window), event)) {
++                return TRUE;
++            }
++    }
++
+     for (i = 0; i < G_N_ELEMENTS (extra_window_keybindings); i++)
+     {
+         if (extra_window_keybindings[i].keyval == event->keyval)
+--
+cgit 
