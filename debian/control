@@ -37,8 +37,8 @@ Build-Depends: debhelper (>= 9),
                libgirepository1.0-dev
 Standards-Version: 3.9.4
 Homepage: http://www.mate-desktop.org/
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/mate-file-manager.git;a=summary
-Vcs-Git: git://anonscm.debian.org/pkg-mate/mate-file-manager.git
+Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/caja.git;a=summary
+Vcs-Git: git://anonscm.debian.org/pkg-mate/caja.git
 
 Package: caja
 Architecture: any
