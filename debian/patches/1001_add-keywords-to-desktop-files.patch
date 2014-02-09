@@ -1,0 +1,40 @@
+Description: Provide Keywords key for .desktop files
+Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
+--- a/data/caja-browser.desktop.in.in
++++ b/data/caja-browser.desktop.in.in
+@@ -9,6 +9,7 @@
+ StartupNotify=true
+ Type=Application
+ Categories=GTK;System;Utility;Core;
++Keywords=files;browser;manager;MATE;
+ OnlyShowIn=MATE;
+ X-MATE-Bugzilla-Bugzilla=MATE
+ X-MATE-Bugzilla-Product=caja
+--- a/data/caja-computer.desktop.in.in
++++ b/data/caja-computer.desktop.in.in
+@@ -8,6 +8,7 @@
+ StartupNotify=true
+ Type=Application
+ Categories=GTK;Core;
++Keywords=browse;disks;folders;local;remote;computer;MATE;
+ OnlyShowIn=MATE;
+ X-MATE-Bugzilla-Bugzilla=MATE
+ X-MATE-Bugzilla-Product=caja
+--- a/src/mate-network-scheme.desktop.in
++++ b/src/mate-network-scheme.desktop.in
+@@ -8,4 +8,5 @@
+ Type=Application
+ Icon=network-workgroup
+ Categories=Core;
++Keywords=bookmarks;browse;local;network;locations;MATE;
+ OnlyShowIn=MATE;
+--- a/data/caja-home.desktop.in.in
++++ b/data/caja-home.desktop.in.in
+@@ -8,6 +8,7 @@
+ StartupNotify=true
+ Type=Application
+ Categories=GTK;Core;
++Keywords=home;personal;folder;open;MATE;
+ OnlyShowIn=MATE;
+ X-MATE-Bugzilla-Bugzilla=MATE
+ X-MATE-Bugzilla-Product=caja
