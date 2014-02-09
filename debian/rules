@@ -1,7 +1,7 @@
 #!/usr/bin/make -f
 
 %:
-	dh $@ --with autoreconf --with quilt
+	dh $@ --with autoreconf
 
 override_dh_install:
 	rm -fv debian/tmp/usr/lib/*/*.la
