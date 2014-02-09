@@ -125,7 +125,6 @@ Priority: extra
 Architecture: any
 Depends: ${misc:Depends},
          caja (= ${binary:Version}),
-         libcaja-extension1 (= ${binary:Version})
 Description: file manager for the MATE desktop (debugging symbols)
  Caja is the official file manager for the MATE desktop. It allows
  to browse directories, preview files and launch applications associated
@@ -144,12 +143,8 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
              multiarch-support,
-Depends: ${shlibs:Depends},
-         ${misc:Depends}
-Replaces: libcaja-extension
-Breaks: libcaja-extension
-Conflicts: libcaja-extension
-Provides: libcaja-extension
+Depends: ${misc:Depends}
+             libcaja-extension1 (= ${binary:Version})
 Description: libraries for caja components (debugging symbols)
  Caja is the official file manager for the MATE desktop.
  .
