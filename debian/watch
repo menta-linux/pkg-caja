@@ -1,2 +1,3 @@
 version=3
-http://pub.mate-desktop.org/releases/(\d\.(2|4|6|8|0))/mate-file-manager-([\.\d]*)\.tar\.xz
+filenamemangle=s/mate-file-manager/caja/,
+http://pub.mate-desktop.org/releases/(\d\.(2|4|6|8|0))/(caja|mate-file-manager)-([\.\d]*)\.tar\.xz
