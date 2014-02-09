@@ -11,13 +11,13 @@ Origin: https://github.com/mate-desktop/caja/commit/70559a30ba34d71d0d9567457c3e
  	caja-connect-server.1 \
  	caja-file-management-properties.1 \
  	$(NULL)
---- a/docs/caja-autorun-software.1
+--- /dev/null
 +++ b/docs/caja-autorun-software.1
 @@ -0,0 +1,14 @@
 +.IX Title "caja-autorun-software 1"
 +.TH caja-autorun-software 1 "26 Sep 2013"
 +.SH "NAME"
-+caja\-autorun\-software
++caja\-autorun\-software \- Auto-Run software with Caja
 +.SH "SYNOPSIS"
 +.IX Header "SYNOPSIS"
 +This executable is part of the package 'caja': The \s-1MATE\s0 Desktop File Manager
