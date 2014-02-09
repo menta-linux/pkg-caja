@@ -1,4 +1,4 @@
-libcaja-extension.so.1.4.0 libcaja-extension1 #MINVER#
+libcaja-extension.so.1 libcaja-extension1 #MINVER#
  caja_file_info_lookup@Base 1.6.3
  caja_property_page_get_type@Base 1.6.3
  caja_menu_item_activate@Base 1.6.3
