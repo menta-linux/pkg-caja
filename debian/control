@@ -52,7 +52,7 @@ Depends: ${shlibs:Depends},
          mate-desktop,
          gvfs,
          libcaja-extension1 (= ${binary:Version}),
-         caja-common (= ${source:Version})
+         caja-common (= ${source:Version}),
 Suggests: gstreamer0.10-tools,
           meld,
           engrampa
@@ -83,7 +83,7 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
              multiarch-support,
 Depends: ${shlibs:Depends},
-         ${misc:Depends}
+         ${misc:Depends},
 Replaces: libcaja-extension
 Breaks: libcaja-extension
 Conflicts: libcaja-extension
@@ -101,7 +101,7 @@ Multi-Arch: same
 Depends: ${shlibs:Depends},
          ${misc:Depends},
          libcaja-extension1 (= ${binary:Version}),
-         libgtk2.0-dev
+         libgtk2.0-dev,
 Description: libraries for caja components (development files)
  Caja is the official file manager for the MATE desktop.
  .
@@ -112,7 +112,7 @@ Package: gir1.2-caja
 Architecture: any
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends}
+         ${shlibs:Depends},
 Description: GObject introspection data for the caja library
  Caja is the official file manager and graphical shell for the
  MATE desktop.
@@ -144,8 +144,8 @@ Architecture: any
 Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
              multiarch-support,
-Depends: ${misc:Depends}
-             libcaja-extension1 (= ${binary:Version})
+Depends: ${misc:Depends},
+         libcaja-extension1 (= ${binary:Version}),
 Description: libraries for caja components (debugging symbols)
  Caja is the official file manager for the MATE desktop.
  .
