@@ -45,17 +45,12 @@ $(PKG)_$(VER)$(DTYPE).orig.tar.xz:
 	    && tar -xf $(PKG)_$(VER).orig.tar.* --directory $(PKG)-$(VER) --strip-components 1 \
 	    || $(RM) -r $(PKG)-$(VER)
 	@echo "# Cleaning-up..."
+### see README.source...
 	cd $(PKG)-$(VER) \
 	    && find . -depth -type d -name 'windows' -exec $(RM) -r {} \; -printf 'removed %p\n' \
 	    && $(RM) -r -v \
-	        docs/*.txt \
-	        docs/*.pdf \
-	        docs/*.sxw \
-	        docs/*.faq \
-	        docs/*.dia \
-	        docs/*.html \
-	        docs/reference \
 	        COPYING-DOCS
+###
 	$(RM) -v $(PKG)_$(VER).orig.tar.*
 	@echo "# Packing..."
 	find -L "$(PKG)-$(VER)" -xdev -type f -print | sort \

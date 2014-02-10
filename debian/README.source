@@ -1,0 +1,17 @@
+The original source tarball caja-1.6.3.tar.gz ships a COPYING-DOCS file that
+refers to the GNU FDL 1.1 License. Later versions of Caja have this file
+removed due to the following reason...
+
+Quoting Emilio Pozuelo Monfort pochu@debian.org from [1]
+
+"""
+ This [i.e. the COPYING-DOCS] file is a leftover for the help/ subdir that was present in nautilus
+ pre-2.0 (e.g. nautilus 1.1.1). Those were released under the GFDL. Nothing is
+ licensed under the GFDL anymore so this is fine. In any case, even if something
+ was released under the GFDL, it would have to specify any Invariant Section for
+ it to be considered non-free. There are no mentions of invariant sections so
+ we're fine. I'll ask upstream to remove that file from the repo.
+"""
+
+[1] http://bugs.debian.org/cgi-bin/bugreport.cgi?bug=738537#10
+
