@@ -27,15 +27,3 @@ Author: Mike Gabriel <mike.gabriel@das-netzwerkteam.de>
 -	style-guide.html \
 -	key_mouse_navigation.txt \
  	$(NULL)
---- a/configure.ac
-+++ b/configure.ac
-@@ -461,9 +461,6 @@
- data/caja-browser.desktop.in
- data/caja-autorun-software.desktop.in
- docs/Makefile
--docs/reference/Makefile
--docs/reference/libcaja-extension/Makefile
--docs/reference/libcaja-extension/version.xml
- eel/Makefile
- icons/Makefile
- libcaja-private/Makefile

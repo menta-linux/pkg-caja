@@ -44,10 +44,7 @@ Files: eel/check-program.c
        eel/eel-xml-extensions.c
        eel/eel-xml-extensions.h
        eel/eel.h
-Copyright: 1999-2001, Eazel, Inc.
-License: LGPL-2+
-
-Files: libcaja-private/caja-bookmark.c
+       libcaja-private/caja-bookmark.c
        libcaja-private/caja-bookmark.h
        libcaja-private/caja-customization-data.h
        libcaja-private/caja-default-file-icon.c
@@ -211,6 +208,31 @@ Files: cut-n-paste-code/libegg/eggdesktopfile.h
 Copyright: 2003-2007, Novell, Inc.
 License: GPL-2+
 
+Files: cut-n-paste-code/libegg/update-from-egg.sh
+       libcaja-extension/caja-extension-i18n.h
+       libcaja-private/caja-icon-info.h
+       libcaja-private/caja-icon-names.h
+       libcaja-private/caja-recent.h
+       src/caja-freedesktop-dbus.c
+       src/caja-freedesktop-dbus.h
+       src/caja-places-sidebar.c
+       src/caja-places-sidebar.h
+       src/caja-pathbar.h
+       src/file-manager/caja-audio-mime-types.h
+       test/test-caja-directory-async.c
+       test/test-caja-search-engine.c
+       test/test-caja-wrap-table.c
+       test/test-copy.c
+       test/test-eel-background.c
+       test/test-eel-editable-label.c
+       test/test-eel-image-table.c
+       test/test-eel-labeled-image.c
+       test/test-eel-pixbuf-scale.c
+       test/test.c
+       test/test.h
+Copyright: *No copyright*
+License: GPL-2+
+
 Files: libcaja-private/caja-thumbnails.c
        src/caja-application.c
        src/caja-emblem-sidebar.c
@@ -290,7 +312,7 @@ Files: eel/eel-canvas-rect-ellipse.c
        eel/eel-canvas.c
        eel/eel-canvas.h
 Copyright: 1997-2000, Free Software Foundation, Inc.
-License: LGPL-2+
+License: GPL-2+
 
 Files: libcaja-private/caja-icon-container.h
        libcaja-private/caja-icon-dnd.c
@@ -572,95 +594,6 @@ License: GPL-2+
 Files: libcaja-private/caja-metadata.c
 Copyright: 2009, Red Hat, Inc.
 License: GPL-2+
-
-Files: cut-n-paste-code/libegg/update-from-egg.sh
-       data/icons/*.png
-       data/icons/*.svg
-       data/patterns/*.png
-       data/patterns/*.jpg
-       data/*.desktop*
-       data/*.service*
-       data/*.placeholder
-       data/*.xml
-       doc/*
-       eel/eel-marshal.list
-       libcaja-extension/caja-extension-i18n.h
-       libcaja-private/caja-icon-info.h
-       libcaja-private/caja-icon-names.h
-       libcaja-private/caja-recent.h
-       src/caja-freedesktop-dbus.c
-       src/caja-freedesktop-dbus.h
-       src/caja-places-sidebar.c
-       src/caja-places-sidebar.h
-       src/caja-pathbar.h
-       src/file-manager/caja-audio-mime-types.h
-       test/test-caja-directory-async.c
-       test/test-caja-search-engine.c
-       test/test-caja-wrap-table.c
-       test/test-copy.c
-       test/test-eel-background.c
-       test/test-eel-editable-label.c
-       test/test-eel-image-table.c
-       test/test-eel-labeled-image.c
-       test/test-eel-pixbuf-scale.c
-       test/test.c
-       test/test.h
-       cut-n-paste-code/libegg/Makefile.am
-       cut-n-paste-code/Makefile.am
-       data/icons/Makefile.am
-       data/Makefile.am
-       data/patterns/Makefile.am
-       docs/reference/libcaja-extension/Makefile.am
-       docs/reference/Makefile.am
-       docs/Makefile.am
-       eel/Makefile.am
-       icons/Makefile.am
-       libcaja-extension/Makefile.am
-       libcaja-private/Makefile.am
-       Makefile.am
-       src/file-manager/Makefile.am
-       src/Makefile.am
-       test/Makefile.am
-Copyright: *No copyright*
-License: GPL-2+ or LGPL-2+
-Comment:
- Appropriately apply licenses as found in COPYING,
- COPYING-DOCS
-
-Files: cut-n-paste-code/libegg/Makefile.in
-       cut-n-paste-code/Makefile.in
-       data/icons/Makefile.in
-       data/Makefile.in
-       data/patterns/Makefile.in
-       docs/reference/libcaja-extension/Makefile.in
-       docs/reference/Makefile.in
-       docs/Makefile.in
-       eel/Makefile.in
-       icons/Makefile.in
-       libcaja-extension/Makefile.in
-       libcaja-private/Makefile.in
-       Makefile.in
-       src/file-manager/Makefile.in
-       src/Makefile.in
-       test/Makefile.in
-Copyright: 1994-2013, Free Software Foundation, Inc.
-License:
- This Makefile.in is free software; the Free Software Foundation
- gives unlimited permission to copy and/or distribute it,
- with or without modifications, as long as this notice is preserved.
- .
- This program is distributed in the hope that it will be useful,
- but WITHOUT ANY WARRANTY, to the extent permitted by law; without
- even the implied warranty of MERCHANTABILITY or FITNESS FOR A
- PARTICULAR PURPOSE.
-
-Files: po/Makefile.in.in
-Copyright: 1995-1997, Ulrich Drepper <drepper@gnu.ai.mit.edu>
-           2004-2008,Rodney Dawes <dobey.pwns@gmail.com>
-License:
- This file may be copied and used freely without restrictions.  It may
- be used in projects which are not available under a GNU Public License,
- but which still want to provide support for the GNU gettext functionality.
 
 Files: debian/*
 Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
