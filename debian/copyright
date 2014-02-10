@@ -44,7 +44,10 @@ Files: eel/check-program.c
        eel/eel-xml-extensions.c
        eel/eel-xml-extensions.h
        eel/eel.h
-       libcaja-private/caja-bookmark.c
+Copyright: 1999-2001, Eazel, Inc.
+License: LGPL-2+
+
+Files: libcaja-private/caja-bookmark.c
        libcaja-private/caja-bookmark.h
        libcaja-private/caja-customization-data.h
        libcaja-private/caja-default-file-icon.c
@@ -122,16 +125,20 @@ Files: eel/check-program.c
        src/caja-window-menus.c
        src/caja-window-toolbars.c
        src/caja-zoom-control.h
-       src/file-manager/fm-desktop-icon-view.h
+Copyright: 1999-2001, Eazel, Inc.
+License: GPL-2+
+
+Files: src/file-manager/fm-desktop-icon-view.h
        src/file-manager/fm-error-reporting.c
        src/file-manager/fm-error-reporting.h
+       src/file-manager/fm-list-view-private.h
        src/file-manager/fm-icon-view.c
        src/file-manager/fm-icon-view.h
-       src/file-manager/fm-list-view-private.h
        src/file-manager/fm-properties-window.c
        src/file-manager/fm-properties-window.h
 Copyright: 1999-2001, Eazel, Inc.
-License: GPL-2+
+License: LGPL-2+
+
 
 Files: libcaja-private/caja-autorun.c
        libcaja-private/caja-autorun.h
@@ -206,32 +213,7 @@ Files: cut-n-paste-code/libegg/eggdesktopfile.h
        libcaja-private/caja-module.h
        libcaja-private/caja-open-with-dialog.h
 Copyright: 2003-2007, Novell, Inc.
-License: GPL-2+
-
-Files: cut-n-paste-code/libegg/update-from-egg.sh
-       libcaja-extension/caja-extension-i18n.h
-       libcaja-private/caja-icon-info.h
-       libcaja-private/caja-icon-names.h
-       libcaja-private/caja-recent.h
-       src/caja-freedesktop-dbus.c
-       src/caja-freedesktop-dbus.h
-       src/caja-places-sidebar.c
-       src/caja-places-sidebar.h
-       src/caja-pathbar.h
-       src/file-manager/caja-audio-mime-types.h
-       test/test-caja-directory-async.c
-       test/test-caja-search-engine.c
-       test/test-caja-wrap-table.c
-       test/test-copy.c
-       test/test-eel-background.c
-       test/test-eel-editable-label.c
-       test/test-eel-image-table.c
-       test/test-eel-labeled-image.c
-       test/test-eel-pixbuf-scale.c
-       test/test.c
-       test/test.h
-Copyright: *No copyright*
-License: GPL-2+
+License: LGPL-2+
 
 Files: libcaja-private/caja-thumbnails.c
        src/caja-application.c
@@ -303,7 +285,7 @@ Files: cut-n-paste-code/libegg/eggtreemultidnd.c
        libcaja-private/caja-ui-utilities.h
        src/caja-autorun-software.c
 Copyright: 2001-2009, Red Hat, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: eel/eel-canvas-rect-ellipse.c
        eel/eel-canvas-rect-ellipse.h
@@ -312,7 +294,7 @@ Files: eel/eel-canvas-rect-ellipse.c
        eel/eel-canvas.c
        eel/eel-canvas.h
 Copyright: 1997-2000, Free Software Foundation, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: libcaja-private/caja-icon-container.h
        libcaja-private/caja-icon-dnd.c
@@ -320,14 +302,14 @@ Files: libcaja-private/caja-icon-container.h
        libcaja-private/caja-icon-private.h
 Copyright: 1999-2000, Free Software Foundation, Inc.
            2000, Eazel, Inc
-License: GPL-2+
+License: LGPL-2+
 
 Files: eel/eel-background-box.c
        eel/eel-background-box.h
        src/file-manager/fm-icon-container.c
        src/file-manager/fm-icon-container.h
 Copyright: 2002, Sun Microsystems, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: src/caja-navigation-window.c
        src/caja-navigation-window.h
@@ -360,7 +342,7 @@ Files: libcaja-extension/caja-location-widget-provider.h
        libcaja-private/caja-open-with-dialog.c
 Copyright: 2003-2004, Novell, Inc.
            2005-2007, Red Hat, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: libcaja-private/caja-undostack-manager.c
  libcaja-private/caja-undostack-manager.h
@@ -378,12 +360,9 @@ License: GPL-2+
 
 Files: libcaja-private/caja-file-conflict-dialog.c
        libcaja-private/caja-file-conflict-dialog.h
-Copyright: 2008-2010, Cosimo Cecchi
-License: GPL-2+
-
-Files: src/caja-connect-server-operation.c
+       src/caja-connect-server-operation.c
        src/caja-connect-server-operation.h
-Copyright: 2010, Cosimo Cecchi <cosimoc@gnome.org>
+Copyright: 2008-2010, Cosimo Cecchi <cosimoc@gnome.org>
 License: GPL-2+
 
 Files: src/caja-connect-server-dialog.c
@@ -449,13 +428,13 @@ License: GPL-2+
 Files: eel/eel-accessibility.h
        src/file-manager/fm-list-model.h
 Copyright: 2001-2002, Anders Carlsson
-License: GPL-2+
+License: LGPL-2+
 
 Files: src/file-manager/fm-list-view.c
        src/file-manager/fm-list-view.h
 Copyright: 2000, Eazel, Inc.
            2001-2002, Anders Carlsson <andersca@gnu.org>
-License: GPL-2+
+License: LGPL-2+
 
 Files: libcaja-private/caja-clipboard.c
        libcaja-private/caja-clipboard.h
@@ -472,21 +451,17 @@ License: GPL-2+
 Files: src/file-manager/fm-empty-view.c
        src/file-manager/fm-empty-view.h
 Copyright: 2006, Free Software Foundation, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: eel/eel-editable-label.c
        eel/eel-editable-label.h
 Copyright: 1995-1997, Peter Mattis, Spencer Kimball and Josh MacDonald
-License: GPL-2+
+License: LGPL-2+
 
 Files: eel/eel-gtk-container.c
        eel/eel-gtk-container.h
 Copyright: 2001, Ramiro Estrugo
-License: GPL-2+
-
-Files: ltmain.sh
-Copyright: 1996-2001, 2003-2006
-License: GPL-2+
+License: LGPL-2+
 
 Files: src/caja-convert-metadata.c
 Copyright: 2009, Alexander Larsson
@@ -546,59 +521,254 @@ Files: src/file-manager/fm-list-model.c
 Copyright: 2001-2002, Anders Carlsson
            2003, Soeren Sandmann
            2004, Novell, Inc
-License: GPL-2+
+License: LGPL-2+
 
 Files: eel/eel-accessibility.c
 Copyright: 2002, Anders Carlsson, Sun Microsystems, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: cut-n-paste-code/libegg/eggsmclient-xsmp.c
 Copyright: 1998, Carsten Schaar
            1998, The Open Group
            2007, Novell, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: libcaja-private/caja-icon-container.c
 Copyright: 1999-2000, Free Software Foundation, Inc.
            2000-2001, Eazel, Inc.
            2002-2003, Red Hat, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: src/file-manager/fm-desktop-icon-view.c
 Copyright: 2000-2001, Eazel, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: cut-n-paste-code/libegg/eggdesktopfile.c
 Copyright: 1999-2000, Red Hat, Inc.
            2001, George Lebl
            2007, Novell, Inc.
-License: GPL-2+
+License: LGPL-2+
 
 Files: libcaja-extension/caja-menu.h
 Copyright: 2003, Novell, Inc.
            2005, Raffaele Sandrini
-License: GPL-2+
+License: LGPL-2+
 
 Files: libcaja-extension/caja-menu.c
 Copyright: 2005, Raffaele Sandrini
-License: GPL-2+
+License: LGPL-2+
 
 Files: libcaja-private/caja-icon-info.c
 Copyright: 2007, Red Hat, Inc., Alexander Larsson <alexl@redhat.com>
-License: GPL-2+
+License: LGPL-2+
 
 Files: src/caja-pathbar.c
 Copyright: 2004, Red Hat, Inc., Jonathan Blandford <jrb@gnome.org>
+License: LGPL-2+
+
+Files: src/caja-pathbar.h
+Copyright: *No copyright*
+License: LGPL-2+
+
+Files: src/caja-freedesktop-dbus.c
+       src/caja-freedesktop-dbus.h
+       src/caja-places-sidebar.c
+       src/caja-places-sidebar.h
+Copyright: *No copyright*
 License: GPL-2+
 
 Files: libcaja-private/caja-metadata.c
 Copyright: 2009, Red Hat, Inc.
+License: LGPL-2+
+
+Files: cut-n-paste-code/libegg/update-from-egg.sh
+       data/icons/*.png
+       data/icons/*.svg
+       data/patterns/*.png
+       data/patterns/*.jpg
+       data/*.desktop*
+       data/*.service*
+       data/*.placeholder
+       data/*.xml
+       docs/*
+       eel/eel-marshal.list
+       icons/*.svg
+       icons/*.png
+       libcaja-extension/caja-extension-i18n.h
+       libcaja-extension/*.pc.in
+       libcaja-private/caja-icon-info.h
+       libcaja-private/caja-icon-names.h
+       libcaja-private/caja-recent.h
+       libcaja-private/*.xml.in
+       m4/gtk-doc.m4
+       po/LINGUAS
+       po/POTFILES.*
+       src/caja-freedesktop-dbus.c
+       src/caja-freedesktop-dbus.h
+       src/caja-places-sidebar.c
+       src/caja-places-sidebar.h
+       src/file-manager/caja-audio-mime-types.h
+       src/file-manager/*.xml
+       src/file-manager/fm-marshal.list
+       src/check-caja
+       src/*.ui
+       src/*.xml
+       src/*.desktop.in
+       test/test-caja-directory-async.c
+       test/test-caja-search-engine.c
+       test/test-caja-wrap-table.c
+       test/test-copy.c
+       test/test-eel-background.c
+       test/test-eel-editable-label.c
+       test/test-eel-image-table.c
+       test/test-eel-labeled-image.c
+       test/test-eel-pixbuf-scale.c
+       test/test.c
+       test/test.h
+       cut-n-paste-code/libegg/Makefile.am
+       cut-n-paste-code/Makefile.am
+       data/icons/Makefile.am
+       data/Makefile.am
+       data/patterns/Makefile.am
+       docs/Makefile.am
+       eel/Makefile.am
+       icons/Makefile.am
+       libcaja-extension/Makefile.am
+       libcaja-private/Makefile.am
+       src/file-manager/Makefile.am
+       src/Makefile.am
+       test/Makefile.am
+       Makefile.am
+       Makefile.shared
+       add-include-prefix
+       config.h.in
+       configure.ac
+       gtk-doc.make
+Copyright: *No copyright*
+License: GPL-2+ or LGPL-2+
+Comment:
+ Appropriately apply licenses as found in COPYING or COPYING.LIBS.
+
+Files: m4/intltool.m4
+Copyright: 2001, Eazel, Inc.
 License: GPL-2+
 
-Files: debian/*
-Copyright: 2011-2014 Stefano Karapetsas <stefano@karapetsas.com>
-           2014 Mike Gabriel <sunweaver@debian.org>
+Files: m4/libtool.m4
+Copyright: 1996-2011, Free Software Foundation, Inc.
 License: GPL-2+
+
+Files: m4/ltoptions.m4
+       m4/ltsugar.m4
+       m4/ltversion.m4
+       m4/lt~obsolete.m4
+Copyright: 2004-2009, Free Software Foundation, Inc.
+License:
+ This file is free software; the Free Software Foundation gives
+ unlimited permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
+
+Files: cut-n-paste-code/libegg/Makefile.in
+       cut-n-paste-code/Makefile.in
+       data/icons/Makefile.in
+       data/Makefile.in
+       data/patterns/Makefile.in
+       docs/Makefile.in
+       eel/Makefile.in
+       icons/Makefile.in
+       libcaja-extension/Makefile.in
+       libcaja-private/Makefile.in
+       Makefile.in
+       src/file-manager/Makefile.in
+       src/Makefile.in
+       test/Makefile.in
+Copyright: 1994-2013, Free Software Foundation, Inc.
+License:
+ This Makefile.in is free software; the Free Software Foundation
+ gives unlimited permission to copy and/or distribute it,
+ with or without modifications, as long as this notice is preserved.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+ even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.
+
+Files: po/Makefile.in.in
+Copyright: 1995-1997, Ulrich Drepper <drepper@gnu.ai.mit.edu>
+           2004-2008,Rodney Dawes <dobey.pwns@gmail.com>
+License:
+ This file may be copied and used freely without restrictions.  It may
+ be used in projects which are not available under a GNU Public License,
+ but which still want to provide support for the GNU gettext functionality.
+
+Files: po/*.po
+Copyright: 1999-2001, Eazel, Inc.
+           1999-2008, Aŭtary Cajaa
+           1999-2009, The Nautilus authors
+           2002-2005, Red Hat, Inc.
+           2002-2004, Novell, Inc.
+           2009, Free Software Foundation, Inc.
+           2010, Rosetta Contributors and Canonical Ltd.
+           2011-2013, The Caja authors
+License: GPL-2+ or LGPL-2+
+Comment:
+ Assuming either license from COPYING or COPYING.LIB file.
+
+Files: aclocal.m4
+Copyright:
+ 1996-2013, Free Software Foundation, Inc.
+ 2001-2004, Red Hat, Inc.
+License:
+ This file is free software; the Free Software Foundation gives
+ unlimited permission to copy and/or distribute it, with or without
+ modifications, as long as this notice is preserved.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY, to the extent permitted by law; without
+ even the implied warranty of MERCHANTABILITY or FITNESS FOR A
+ PARTICULAR PURPOSE.
+ .
+ [...]
+ .
+ This file is free software, distributed under the terms of the GNU
+ General Public License.  As a special exception to the GNU General
+ Public License, this file may be distributed as part of a program
+ that contains a configuration script generated by Autoconf, under
+ the same distribution terms as the rest of that program.
+ .
+ This file can be copied and used freely without restrictions.  It can
+ be used in projects which are not available under the GNU Public License
+ but which still want to provide support for the GNU gettext functionality.
+
+Files: ltmain.sh
+Copyright: 1996-2011, Free Software Founation, Inc.
+License: GPL-2+
+
+Files: compile
+       decomp
+       missing
+       test-driver
+Copyright: 1996-2013, Free Software Foundation, Inc.
+License: GPL-2+~amorph
+
+Files: config.guess
+       config.sub
+Copyright: 1992-2013, Free Software Foundation, Inc.
+License: GPL-3+~amorph
+
+Files: configure
+Copyright: 1992-2010, Free Software Foundaction, Inc.
+License:
+ This configure script is free software; the Free Software Foundation
+ gives unlimited permission to copy, distribute and modify it.
+
+Files: install-sh
+Copyright: 1994, X Consortium
+License: MIT-X11
+
+Files: debian/*
+Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
+           2014, Mike Gabriel <sunweaver@debian.org>
+License: GPL-2+ or LGPL-2+
 
 License: GPL-2+
  This package is free software; you can redistribute it and/or modify
@@ -617,6 +787,49 @@ License: GPL-2+
  On Debian systems, the complete text of the GNU General
  Public License version 2 can be found in "/usr/share/common-licenses/GPL-2".
 
+License: GPL-2+~amorph
+ This program is free software; you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation; either version 2 of the License, or
+ (at your option) any later version.
+ .
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-2".
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that program.
+
+License: GPL-3+~amorph
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU General Public License as published by
+ the Free Software Foundation, either version 3 of the License, or
+ (at your option) any later version.
+ .
+ This package is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU General Public License for more details.
+ .
+ You should have received a copy of the GNU General Public License
+ along with this program. If not, see <http://www.gnu.org/licenses/>.
+ .
+ On Debian systems, the complete text of the GNU General
+ Public License version 3 can be found in "/usr/share/common-licenses/GPL-3".
+ .
+ As a special exception to the GNU General Public License, if you
+ distribute this file as part of a program that contains a
+ configuration script generated by Autoconf, you may include it under
+ the same distribution terms that you use for the rest of that
+ program.  This Exception is an additional permission under section 7
+ of the GNU General Public License, version 3 ("GPLv3").
+
 License: LGPL-2+
  This library is free software; you can redistribute it and/or
  modify it under the terms of the GNU Library General Public
@@ -634,3 +847,25 @@ License: LGPL-2+
  On Debian systems, the complete text of the GNU Library General
  Public License version 2 can be found in "/usr/share/common-licenses/LGPL-2".
 
+License: MIT-X11
+ Permission is hereby granted, free of charge, to any person obtaining a copy
+ of this software and associated documentation files (the "Software"), to
+ deal in the Software without restriction, including without limitation the
+ rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+ sell copies of the Software, and to permit persons to whom the Software is
+ furnished to do so, subject to the following conditions:
+ .
+ The above copyright notice and this permission notice shall be included in
+ all copies or substantial portions of the Software.
+ .
+ THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+ IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+ FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+ X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+ AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNEC-
+ TION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+ .
+ Except as contained in this notice, the name of the X Consortium shall not
+ be used in advertising or otherwise to promote the sale, use or other deal-
+ ings in this Software without prior written authorization from the X Consor-
+ tium.
