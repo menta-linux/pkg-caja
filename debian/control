@@ -66,6 +66,7 @@ Description: file manager for the MATE desktop
 
 Package: caja-common
 Architecture: all
+Multi-Arch: foreign
 Depends: ${misc:Depends}
 Breaks: caja (<= 1.0.3-1)
 Replaces: caja (<= 1.0.3-1)
@@ -90,7 +91,8 @@ Breaks: libcaja-extension
 Conflicts: libcaja-extension
 Provides: libcaja-extension
 Description: libraries for caja components
- Caja is the official file manager for the MATE desktop.
+ Caja is the official file manager and graphical shell for the
+ MATE desktop.
  .
  This package contains a few runtime libraries needed by caja's
  extensions.
@@ -104,7 +106,8 @@ Depends: ${shlibs:Depends},
          libcaja-extension1 (= ${binary:Version}),
          libgtk2.0-dev,
 Description: libraries for caja components (development files)
- Caja is the official file manager for the MATE desktop.
+ Caja is the official file manager and graphical shell for the
+ MATE desktop.
  .
  This package contains the development files for the libraries needed
  by caja's extensions. 
@@ -125,6 +128,7 @@ Package: caja-dbg
 Section: debug
 Priority: extra
 Architecture: any
+Multi-Arch: foreign
 Depends: ${misc:Depends},
          caja (= ${binary:Version}),
 Description: file manager for the MATE desktop (debugging symbols)
@@ -148,7 +152,8 @@ Pre-Depends: ${misc:Pre-Depends},
 Depends: ${misc:Depends},
          libcaja-extension1 (= ${binary:Version}),
 Description: libraries for caja components (debugging symbols)
- Caja is the official file manager for the MATE desktop.
+ Caja is the official file manager and graphical shell for the
+ MATE desktop.
  .
  This package contains debugging symbols for caja's extension libraries
  .
