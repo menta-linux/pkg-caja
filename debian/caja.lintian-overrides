@@ -3,7 +3,7 @@
 caja: spelling-error-in-copyright GNU Public License GNU General Public License
 
 # this currently is work in progress on the upstream
-# side (https://github.com/mate-desktop/caja/issues/249)
+# side (https://github.com/mate-desktop/caja/issues/252)
 caja: desktop-entry-lacks-main-category usr/share/applications/caja-computer.desktop
 caja: desktop-entry-lacks-main-category usr/share/applications/caja-home.desktop
 caja: desktop-entry-lacks-main-category usr/share/applications/mate-network-scheme.desktop
