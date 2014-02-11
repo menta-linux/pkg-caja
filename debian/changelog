@@ -1,5 +1,5 @@
-caja (1.6.4-1) UNRELEASED; urgency=low
+caja (1.6.4-1) unstable; urgency=low
 
   * Initial release. (Closes: #727061).
 
- -- Stefano Karapetsas <stefano@karapetsas.com>  Wed, 16 Oct 2013 14:33:43 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 11 Feb 2014 09:16:26 +0100
