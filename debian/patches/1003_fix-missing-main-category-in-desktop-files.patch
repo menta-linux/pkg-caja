@@ -1,0 +1,41 @@
+Description: Add a desktop file main category to categories
+Author: Sander Sweers
+--- a/data/caja-computer.desktop.in.in
++++ b/data/caja-computer.desktop.in.in
+@@ -7,9 +7,10 @@
+ Terminal=false
+ StartupNotify=true
+ Type=Application
+-Categories=GTK;Core;
++Categories=GTK;System;Core;
+ Keywords=browse;disks;folders;local;remote;computer;MATE;
+ OnlyShowIn=MATE;
++NoDisplay=true;
+ X-MATE-Bugzilla-Bugzilla=MATE
+ X-MATE-Bugzilla-Product=caja
+ X-MATE-Bugzilla-Component=general
+--- a/data/caja-home.desktop.in.in
++++ b/data/caja-home.desktop.in.in
+@@ -7,9 +7,10 @@
+ Terminal=false
+ StartupNotify=true
+ Type=Application
+-Categories=GTK;Core;
++Categories=GTK;System;Core;
+ Keywords=home;personal;folder;open;MATE;
+ OnlyShowIn=MATE;
++NoDisplay=true;
+ X-MATE-Bugzilla-Bugzilla=MATE
+ X-MATE-Bugzilla-Product=caja
+ X-MATE-Bugzilla-Component=general
+--- a/src/mate-network-scheme.desktop.in
++++ b/src/mate-network-scheme.desktop.in
+@@ -7,6 +7,7 @@
+ StartupNotify=true
+ Type=Application
+ Icon=network-workgroup
+-Categories=Core;
++Categories=GTK;System;Core;
+ Keywords=bookmarks;browse;local;network;locations;MATE;
+ OnlyShowIn=MATE;
++NoDisplay=true;
