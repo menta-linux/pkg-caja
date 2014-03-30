@@ -1,5 +1,6 @@
-caja (1.6.4-2) UNRELEASED; urgency=low
+caja (1.8.0-1) UNRELEASED; urgency=low
 
+  * New upstream release.
   * debian/patches:
     + Add patch 1003_fix-missing-main-category-in-desktop-files.patch. Silence
       a lintian warning that complains about a missing main category in some
@@ -7,7 +8,7 @@ caja (1.6.4-2) UNRELEASED; urgency=low
   * debian/copyright:
     + Fix typo of filename (depcomp).
 
- -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Mar 2014 23:37:50 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Mar 2014 23:39:32 +0200
 
 caja (1.6.4-1) unstable; urgency=low
 
