@@ -1,3 +1,4 @@
 version=3
-opts=dversionmangle=s/\+dfsg1//,filenamemangle=s/mate-file-manager/caja/ \
-http://pub.mate-desktop.org/releases/(\d\.(12|14|6|8|10))/(?:mate-file-manager|caja)-([\.\d]*)\.tar\.xz
+opts=dversionmangle=s/\+dfsg1// \
+http://git.mate-desktop.org/caja/ \
+    snapshot/caja-(\d\.(?:[0-9]+|)[24680]\.\d)\.tar\.xz
