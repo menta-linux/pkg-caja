@@ -7,6 +7,8 @@ caja (1.8.0-1) UNRELEASED; urgency=low
       desktop files.
   * debian/copyright:
     + Fix typo of filename (depcomp).
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Mar 2014 23:39:32 +0200
 
