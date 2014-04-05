@@ -7,7 +7,7 @@ DTYPE =
 VER  ?= $(subst $(DTYPE),,$(UVER))
 
 %:
-	dh $@ --with autoreconf
+	dh $@
 
 override_dh_install:
 	rm -fv debian/tmp/usr/lib/*/*.la
@@ -17,6 +17,8 @@ override_dh_install:
 	dh_install --list-missing
 
 override_dh_auto_configure:
+	# upstream tarball is without configure. autogen.sh will create it
+	NOCONFIGURE=1 ./autogen.sh
 	dh_auto_configure -- \
 		--libexecdir=/usr/lib/caja \
 		--includedir=/usr/include/$(dpkg-architecture -qDEB_BUILD_MULTIARCH) \
