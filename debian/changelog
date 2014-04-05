@@ -1,14 +1,35 @@
 caja (1.8.0-1) UNRELEASED; urgency=low
 
   * New upstream release.
+  * debian/watch:
+    + Use tagged CGit tarball snapshots as upstream source.
+  * debian/copyright:
+    + Adapt to file changes in new upstream source tree.
+    + Point to git.mate-desktop.org in Source: field.
+  * debian/control:
+    + Add to B-D: libdconf-dev.
+    + Versioned B-D for libmate-desktop-dev (>= 1.7.1).
+  * debian/rules:
+    + Build package using autogen.sh.
+    + Turn on compiler commands during package build (configure option:
+      --disable-silent-rules).
+    + Enable parallel builds
   * debian/patches:
     + Add patch 1003_fix-missing-main-category-in-desktop-files.patch. Silence
       a lintian warning that complains about a missing main category in some
       desktop files.
-  * debian/copyright:
-    + Fix typo of filename (depcomp).
-  * debian/watch:
-    + Use tagged CGit tarball snapshots as upstream source.
+    + Drop 1001_add-keywords-to-desktop-files.patch. Applied upstream.
+    + Drop 1002_fix-caja-autorun-software-man-page.patch. Applied upstream.
+    + Drop 1003_fix-missing-main-category-in-desktop-files.patch. Applied
+      upstream.
+    + Pull in 0001_x-caja-desktop.patch from upstream. Fix multiply opened caja
+      instances during session startup.
+    + Add 1001_man-page-fixes.patch. Fix minor man page issues reported by
+      lintian.
+  * debian/caja.install:
+    + Omit /usr/share/gtk-doc/ from package. Not built anymore in 1.8.0.
+  * lintian:
+    + Drop not-needed-anymore overrides.
 
  -- Mike Gabriel <sunweaver@debian.org>  Sun, 30 Mar 2014 23:39:32 +0200
 
