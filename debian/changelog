@@ -1,8 +1,13 @@
-caja (1.8.1-1) UNRELEASED; urgency=low
+caja (1.8.1-1) unstable; urgency=low
 
   * New upstream release.
+  * debian/copyright:
+    + Fix typo (opinion -> option).
+  * debian/patches:
+    + Drop 0001_x-caja-desktop.patch, 1001_man-page-fixes.patch. Both applied
+      upstream.
 
- -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Apr 2014 07:17:22 +0200
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 29 Apr 2014 07:24:34 +0200
 
 caja (1.8.0-1) unstable; urgency=low
 
