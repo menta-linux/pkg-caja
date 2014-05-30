@@ -1,3 +1,14 @@
+caja (1.8.1-2) unstable; urgency=low
+
+  [ Vangelis Mouhtsis ]
+  * debian/rules:
+    + Replace on dh_install --list-missing -> --fail-missing.
+  * debian/control:
+    + Add [linux-any] in build-depends as needed to make package
+      build on non-Linux Debian variants. (Closes: #749490).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 30 May 2014 13:22:08 +0200
+
 caja (1.8.1-1) unstable; urgency=low
 
   * New upstream release.
