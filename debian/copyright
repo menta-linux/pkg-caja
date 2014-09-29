@@ -49,6 +49,7 @@ License: LGPL-2+
 
 Files: libcaja-private/caja-bookmark.c
        libcaja-private/caja-bookmark.h
+       libcaja-private/caja-customization-data.c
        libcaja-private/caja-customization-data.h
        libcaja-private/caja-default-file-icon.c
        libcaja-private/caja-default-file-icon.h
@@ -138,7 +139,6 @@ Files: src/file-manager/fm-desktop-icon-view.h
        src/file-manager/fm-properties-window.h
 Copyright: 1999-2001, Eazel, Inc.
 License: LGPL-2+
-
 
 Files: libcaja-private/caja-autorun.c
        libcaja-private/caja-autorun.h
@@ -581,34 +581,36 @@ Files: libcaja-private/caja-metadata.c
 Copyright: 2009, Red Hat, Inc.
 License: LGPL-2+
 
-Files: cut-n-paste-code/libegg/update-from-egg.sh
+Files:  .tx/config
+       cut-n-paste-code/README
+       cut-n-paste-code/libegg/update-from-egg.sh
        data/icons/*.png
        data/icons/*.svg
        data/patterns/*.png
        data/patterns/*.jpg
+       data/caja.xml.in
        data/*.desktop*
        data/*.service*
        data/*.placeholder
        data/*.xml
        docs/*
-       eel/eel-marshal.list
+       eel/ChangeLog
+       eel/README
+       eel/check-eel
        icons/*.svg
        icons/*.png
        libcaja-extension/caja-extension-i18n.h
        libcaja-extension/*.pc.in
+       libcaja-private/README
+       libcaja-private/caja.convert
        libcaja-private/caja-icon-info.h
        libcaja-private/caja-icon-names.h
        libcaja-private/caja-recent.h
        libcaja-private/*.xml.in
        po/LINGUAS
        po/POTFILES.*
-       src/caja-freedesktop-dbus.c
-       src/caja-freedesktop-dbus.h
-       src/caja-places-sidebar.c
-       src/caja-places-sidebar.h
        src/file-manager/caja-audio-mime-types.h
        src/file-manager/*.xml
-       src/file-manager/fm-marshal.list
        src/check-caja
        src/*.ui
        src/*.xml
@@ -637,8 +639,20 @@ Files: cut-n-paste-code/libegg/update-from-egg.sh
        src/file-manager/Makefile.am
        src/Makefile.am
        test/Makefile.am
+       AUTHORS
+       COPYING
+       COPYING.EXTENSIONS
+       COPYING.LIB
+       ChangeLog
+       HACKING
+       MAINTAINERS
        Makefile.am
        Makefile.shared
+       NEWS
+       README
+       README.commits
+       THANKS
+       TODO
        add-include-prefix
        autogen.sh
        configure.ac
@@ -648,6 +662,8 @@ Comment:
  Appropriately apply licenses as found in COPYING or COPYING.LIBS.
 
 Files: po/*.po
+       po/ChangeLog
+       po/gnome-copyrights.txt
 Copyright: 1999-2001, Eazel, Inc.
            1999-2008, Aŭtary Cajaa
            1999-2009, The Nautilus authors
@@ -659,6 +675,7 @@ Copyright: 1999-2001, Eazel, Inc.
 License: GPL-2+ or LGPL-2+
 Comment:
  Assuming either license from COPYING or COPYING.LIB file.
+
 
 Files: debian/*
 Copyright: 2011-2014, Stefano Karapetsas <stefano@karapetsas.com>
