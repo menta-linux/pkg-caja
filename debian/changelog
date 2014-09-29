@@ -1,3 +1,17 @@
+caja (1.8.2-1) unstable; urgency=medium
+
+  [ Mike Gabriel ]
+  * New upstream release. (Closes: #757479).
+  * debian/copyright:
+    + Really mention all upstream files.
+  + debian/control:
+    + Drop direct Pre-Ds on bin:package multiarch-support.
+
+  [ Vangelis Mouhtsis ]
+  * debian/control:Bump Standards: to 3.9.6. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 29 Sep 2014 11:31:01 +0200
+
 caja (1.8.1-2) unstable; urgency=low
 
   [ Vangelis Mouhtsis ]
