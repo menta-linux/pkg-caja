@@ -1,3 +1,18 @@
+caja (1.8.2-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0001_fix-desktop-icon-size.patch. Make adjusting the default
+      folder and desktop icon size predictable. (Closes: #775525).
+    + Add 0002_dont-start-desktop-outside-of-MATE-sessions.patch. Stop
+      launching a MATE desktop window when one opens Caja outside a MATE
+      desktop session. (Closes: #771587).
+  * debian/control:
+    + Add to B (bin:package caja). From this release on, caja relies on
+      mate-session-manager 1.8.1-7 or higher when running in a MATE session.
+      However, caja does not depend on mate-session-manager.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 21 Jan 2015 14:58:18 +0100
+
 caja (1.8.2-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
