@@ -54,6 +54,7 @@ Depends: ${shlibs:Depends},
          gvfs,
          libcaja-extension1 (= ${binary:Version}),
          caja-common (= ${source:Version}),
+Recommends: gvfs-backends,
 Suggests: gstreamer0.10-tools,
           meld,
           engrampa
