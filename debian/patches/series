@@ -1,3 +1,4 @@
 0001_fix-desktop-icon-size.patch
 0002_dont-start-desktop-outside-of-MATE-sessions.patch
 0003_fix-crash-in-places-sidebar.patch
+0004_avoid-automounts-while-screen-is-locked.patch
