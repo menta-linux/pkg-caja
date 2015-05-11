@@ -1,3 +1,13 @@
+caja (1.8.2-4) unstable; urgency=medium
+
+  * debian/patches:
+    + Add 0004_avoid-automounts-while-screen-is-locked.patch. Don't
+      mount newly added USB flash drives / optical disks / etc. while
+      a session is locked by the screensaver. Delay the automounting
+      action until the session has been unlocked again. (Closes: #781608).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 11 May 2015 06:19:52 +0200
+
 caja (1.8.2-3) unstable; urgency=medium
 
   * debian/control:
