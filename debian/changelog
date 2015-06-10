@@ -1,3 +1,20 @@
+caja (1.10.0-1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * debian/control:
+    + Updated dependencies for new release.
+    + Updated descriptions so they are consistent with upstream.
+  * debian/patches:
+    + Drop 0001_fix-desktop-icon-size.patch. Applied upstream.
+    + Drop 0003_fix-crash-in-places-sidebar.patch. Applied upstream.
+  * debian/rules:
+    + Removed --enable-unique because libunique is required now.
+    + Added --with-gtk=2.0
+  * debian/caja-common.install
+    + Added /usr/share/appdata
+
+ -- Martin Wimpress <code@flexion.org>  Tue, 09 Jun 2015 04:10:28 +0100
+
 caja (1.8.2-4) unstable; urgency=medium
 
   * debian/patches:
