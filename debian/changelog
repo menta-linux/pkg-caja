@@ -5,6 +5,8 @@ caja (1.10.0-1) UNRELEASED; urgency=low
     + Update dependencies for new release.
     + Update descriptions so they are consistent with upstream.
     + Remove superfluous gir1.2-* dependencies.
+  * debian/copyright:
+    + Update copyright file after new upstream release.
   * debian/patches:
     + Drop 0001_fix-desktop-icon-size.patch. Applied upstream.
     + Drop 0002_dont-start-desktop-outside-of-MATE-sessions.patch.
