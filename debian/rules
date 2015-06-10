@@ -28,7 +28,8 @@ override_dh_auto_configure:
 		--disable-update-mimedb \
 		--disable-static \
 		--localstatedir=/var \
-		--enable-introspection
+		--enable-introspection \
+		--with-gtk=2.0
 
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test
