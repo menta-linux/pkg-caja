@@ -2,16 +2,19 @@ caja (1.10.0-1) UNRELEASED; urgency=low
 
   * New upstream release.
   * debian/control:
-    + Updated dependencies for new release.
-    + Updated descriptions so they are consistent with upstream.
+    + Update dependencies for new release.
+    + Update descriptions so they are consistent with upstream.
+    + Remove superfluous gir1.2-* dependencies.
   * debian/patches:
     + Drop 0001_fix-desktop-icon-size.patch. Applied upstream.
+    + Drop 0002_dont-start-desktop-outside-of-MATE-sessions.patch.
+    Applied upstream.
     + Drop 0003_fix-crash-in-places-sidebar.patch. Applied upstream.
   * debian/rules:
-    + Removed --enable-unique because libunique is required now.
-    + Added --with-gtk=2.0
+    + Remove --enable-unique because libunique is required now.
+    + Add --with-gtk=2.0
   * debian/caja-common.install
-    + Added /usr/share/appdata
+    + Add /usr/share/appdata
 
  -- Martin Wimpress <code@flexion.org>  Tue, 09 Jun 2015 04:10:28 +0100
 
