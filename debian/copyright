@@ -598,6 +598,7 @@ Files:  .tx/config
        data/*.service*
        data/*.placeholder
        data/*.xml
+       data/*.xml.in
        docs/*
        eel/ChangeLog
        eel/README
