@@ -1,24 +1,38 @@
-caja (1.10.0-1) UNRELEASED; urgency=low
+caja (1.10.1-1~exp1) experimental; urgency=low
 
+  [ Martin Wimpress ]
   * New upstream release.
   * debian/control:
     + Update dependencies for new release.
     + Update descriptions so they are consistent with upstream.
-    + Remove superfluous gir1.2-* dependencies.
+    + Remove superfluous gir1.2-* build-dependencies.
   * debian/copyright:
     + Update copyright file after new upstream release.
   * debian/patches:
     + Drop 0001_fix-desktop-icon-size.patch. Applied upstream.
     + Drop 0002_dont-start-desktop-outside-of-MATE-sessions.patch.
-    Applied upstream.
+      Applied upstream.
     + Drop 0003_fix-crash-in-places-sidebar.patch. Applied upstream.
   * debian/rules:
     + Remove --enable-unique because libunique is required now.
-    + Add --with-gtk=2.0
+    + Add --with-gtk=2.0.
   * debian/caja-common.install
-    + Add /usr/share/appdata
+    + Add /usr/share/appdata.
 
- -- Martin Wimpress <code@flexion.org>  Tue, 09 Jun 2015 04:10:28 +0100
+  [ Mike Gabriel ]
+  * debian/control:
+    + Versioned D: mate-common (>= 1.10).
+    + Update Section (gir1.2-caja): introspection.
+  * debian/patches:
+    + Drop 0004_avoid-automounts-while-screen-is-locked.patch. Applied
+      upstream.
+  * debian/copyright:
+    + Mention data/*.xml.in.
+    + Drop block for src/glibcompat.h, not in upstream sources anymore.
+  * debian/rules:
+    + Create orig tarball in ../ rather than in $(CURDIR).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Jun 2015 09:10:14 +0200
 
 caja (1.8.2-4) unstable; urgency=medium
 
