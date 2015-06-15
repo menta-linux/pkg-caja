@@ -1,11 +1,3 @@
-caja (1.8.2-5) unstable; urgency=medium
-
-  * debian/patches:
-    + Add 0005_files-as-bookmarks.patch. Allow the user to drag'n'drop files
-      into the bookmark section. (Closes: #786395).
-
- -- Mike Gabriel <sunweaver@debian.org>  Thu, 28 May 2015 11:29:14 +0200
-
 caja (1.8.2-4) unstable; urgency=medium
 
   * debian/patches:
