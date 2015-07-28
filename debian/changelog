@@ -1,3 +1,20 @@
+caja (1.10.3-1~exp1) UNRELEASED; urgency=low
+
+  * New upstream release.
+  * debian/caja-common.install:
+    + Add common files.
+  * debian/caja.install:
+    + Remove common files.
+  * debian/libcaja-extension-dev.install:
+    + Add usr/share/gtk-doc.
+  * debian/rules:
+    + Add --enable-gtk-doc.
+    + Remove dfsg suffix.
+  * debian/watch:
+    + Remove dfsg suffix.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 27 Jul 2015 05:30:19 +0100
+
 caja (1.10.1-1~exp1) experimental; urgency=low
 
   [ Martin Wimpress ]
