@@ -1,5 +1,6 @@
-caja (1.10.3-1~exp1) UNRELEASED; urgency=low
+caja (1.10.3-1) unstable; urgency=low
 
+  [ Martin Wimpress ]
   * New upstream release.
   * debian/caja-common.install:
     + Add common files.
@@ -13,7 +14,11 @@ caja (1.10.3-1~exp1) UNRELEASED; urgency=low
   * debian/watch:
     + Remove dfsg suffix.
 
- -- Martin Wimpress <code@flexion.org>  Mon, 27 Jul 2015 05:30:19 +0100
+  [ John Paul Adrian Glaubitz ]
+  * Fix spelling in debian/control (allows to -> allows one to).
+  * Upload to unstable.
+
+ -- John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>  Mon, 10 Aug 2015 13:39:55 +0200
 
 caja (1.10.1-1~exp1) experimental; urgency=low
 
