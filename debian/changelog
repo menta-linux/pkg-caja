@@ -1,3 +1,13 @@
+caja (1.10.3-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/control:
+    + Clean up build dependencies. Process with wrap-and-sort.
+    + Update gstreamer dependencies to 1.0 match upstream changes.
+    + Update caja with Breaks: libcaja-extension (<< 1.10.0).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 03 Sep 2015 07:47:13 +0200
+
 caja (1.10.3-1) unstable; urgency=low
 
   [ Martin Wimpress ]
