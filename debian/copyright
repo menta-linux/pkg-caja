@@ -345,9 +345,14 @@ Copyright: 2003-2004, Novell, Inc.
 License: LGPL-2+
 
 Files: libcaja-private/caja-undostack-manager.c
- libcaja-private/caja-undostack-manager.h
+       libcaja-private/caja-undostack-manager.h
 Copyright: 2007-2010, Amos Brocco
            2011, Stefano Karapetsas
+License: GPL-2+
+
+Files: libcaja-private/caja-extensions.c
+       libcaja-private/caja-extensions.h
+Copyright: 2014, Alexander van der Meij <alexandervdm@gliese.me>
 License: GPL-2+
 
 Files: src/caja-notebook.c
@@ -500,10 +505,6 @@ Copyright: 1999-2000, Free Software Foundaton
   2000-2001, Eazel, Inc
 License: GPL-2+
 
-Files: src/glibcompat.h
-Copyright: 2012, MATE Desktop Project
-License: GPL-2+
-
 Files: src/caja-image-properties-page.c
 Copyright: 2004, Red Hat, Inc.
            2007, Novell, Inc.
@@ -593,6 +594,7 @@ Files:  .tx/config
        data/*.service*
        data/*.placeholder
        data/*.xml
+       data/*.xml.in
        docs/*
        eel/ChangeLog
        eel/README
