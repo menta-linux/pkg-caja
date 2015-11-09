@@ -1,3 +1,9 @@
+caja (1.12.0-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <code@flexion.org>  Mon, 09 Nov 2015 16:11:50 +0000
+
 caja (1.10.4-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
