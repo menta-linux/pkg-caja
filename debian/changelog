@@ -1,3 +1,11 @@
+caja (1.12.2-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 1001_fix-typo-in-binary.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 04 Jan 2016 00:02:25 +0100
+
 caja (1.12.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
