@@ -1,8 +1,11 @@
-caja (1.12.3-1) UNRELEASED; urgency=medium
+caja (1.12.3-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+    - Filename font color now gets picked up from theme correctly for
+      all themes. (Closes: #770760).
 
- -- Martin Wimpress <code@flexion.org>  Tue, 26 Jan 2016 13:48:43 +0000
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 03 Feb 2016 19:21:06 +0100
 
 caja (1.12.2-1) unstable; urgency=medium
 
