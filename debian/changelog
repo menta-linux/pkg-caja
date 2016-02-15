@@ -1,3 +1,14 @@
+caja (1.12.3-2) unstable; urgency=medium
+
+  * debian/control:
+    + Split off bin:package libcaja-extension-doc from libcaja-extension-dev.
+      (Closes: #813684).
+  * debian/control:
+    + Add Breaks: field for recently introduced bin:package
+      libcaja-extension-doc. It breaks libcaja-extension-dev (<= 1.12.3-2~).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 15 Feb 2016 13:45:17 +0100
+
 caja (1.12.3-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
