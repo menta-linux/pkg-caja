@@ -28,8 +28,8 @@ Build-Depends: debhelper (>= 9),
                shared-mime-info,
 Standards-Version: 3.9.6
 Homepage: http://www.mate-desktop.org/
-Vcs-Browser: http://anonscm.debian.org/gitweb/?p=pkg-mate/caja.git;a=summary
-Vcs-Git: git://anonscm.debian.org/pkg-mate/caja.git
+Vcs-Browser: https://anonscm.debian.org/git/pkg-mate/caja.git
+Vcs-Git: https://anonscm.debian.org/git/pkg-mate/caja.git
 
 Package: caja
 Architecture: any
