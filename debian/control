@@ -110,6 +110,7 @@ Package: libcaja-extension-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends},
+Brekas: libcaja-extension-dev (<< 1.12.3-2~),
 Description: libraries for Caja components (API documentation files)
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
