@@ -1,3 +1,13 @@
+caja (1.12.4-2) unstable; urgency=medium
+
+  * debian/changelog:
+    + Fix referenced version in stanza for 1.12.3-2.
+  * debian/control:
+    + Fix typo in field name "Breaks:" (for libcaja-extension-doc). (Closes:
+      #814957).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 17 Feb 2016 11:25:43 +0100
+
 caja (1.12.4-1) unstable; urgency=medium
 
   * New upstream release.
