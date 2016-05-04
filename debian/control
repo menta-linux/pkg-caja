@@ -95,7 +95,7 @@ Section: libdevel
 Architecture: any
 Multi-Arch: same
 Depends: libcaja-extension1 (= ${binary:Version}),
-         libgtk2.0-dev,
+         libgtk-3-dev,
          ${misc:Depends},
          ${shlibs:Depends},
 Description: libraries for Caja components (development files)
