@@ -24,7 +24,7 @@ Build-Depends: debhelper (>= 9),
                libunique-dev,
                libx11-dev,
                libxml2-dev,
-               mate-common (>= 1.12),
+               mate-common (>= 1.14),
                quilt,
                shared-mime-info,
 Standards-Version: 3.9.7
