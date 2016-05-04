@@ -28,7 +28,7 @@ override_dh_auto_configure:
 		--localstatedir=/var \
 		--enable-introspection \
 		--enable-gtk-doc \
-		--with-gtk=2.0
+		--with-gtk=3.0
 
 override_dh_auto_test:
 	DEB_BUILD_OPTIONS=nocheck dh_auto_test
