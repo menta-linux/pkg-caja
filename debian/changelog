@@ -2,7 +2,7 @@ caja (1.14.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
-  
+
   [ Vangelis Mouhtsis ]
   * debian/{control,rules}:
     + Don't build dbg:packages anymore.
