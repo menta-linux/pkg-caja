@@ -1,8 +1,14 @@
-caja (1.14.2-1) UNRELEASED; urgency=medium
+caja (1.14.2-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+  
+  [ Vangelis Mouhtsis ]
+  * debian/{control,rules}:
+    + Don't build dbg:packages anymore.
+      See https://wiki.debian.org/AutomaticDebugPackages.
 
- -- Martin Wimpress <code@flexion.org>  Wed, 17 Aug 2016 12:58:14 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 22 Aug 2016 10:23:57 +0200
 
 caja (1.14.1-1) unstable; urgency=medium
 
