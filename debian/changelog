@@ -1,4 +1,4 @@
-caja (1.15.4-1) UNRELEASED; urgency=medium
+caja (1.15.4-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release. (Closes: #836349).
 
