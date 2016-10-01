@@ -8,6 +8,12 @@ caja (1.16.0-1) UNRELEASED; urgency=medium
 caja (1.15.4-0ubuntu1) yakkety; urgency=medium
 
   * New upstream development release. (Closes: #836349).
+  * debian/control:
+    + Dependencies updated for MATE 1.15.
+  * debian/watch:
+    + Update version matching to support development releases.
+  * debian/changelog:
+    + White space clean-up in previous stanza.
 
  -- Martin Wimpress <code@flexion.org>  Fri, 09 Sep 2016 13:04:46 +0100
 
