@@ -5,6 +5,12 @@ caja (1.16.0-1) UNRELEASED; urgency=medium
     - Various GTK-3.21 incompatibilities fixed. (Closes: #836349, #837889, #838155,
       #834943, #838108, #836669).
 
+  [ Vangelis Mouhtsis ]
+  * debian/control:
+    + Dependencies updated for MATE 1.16.
+  * debian/watch:
+    + Update version matching again to _not_ support development releases.
+
   [ Mike Gabriel ]
   * debian/changelog:
     + Fix missing changelog items for 1.15.4-0ubuntu1 upload.
