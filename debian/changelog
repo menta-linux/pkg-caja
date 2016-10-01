@@ -1,9 +1,9 @@
-caja (1.16.0-1) UNRELEASED; urgency=medium
+caja (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
-    - Various GTK-3.21 incompatibilities fixed. (Closes: #836349, #837889, #838155,
-      #834943, #838108, #836669).
+    - Various GTK-3.21 incompatibilities fixed. (Closes: #836349, #837889,
+      #838155, #834943, #838108, #836669).
 
   [ Vangelis Mouhtsis ]
   * debian/control:
@@ -15,7 +15,7 @@ caja (1.16.0-1) UNRELEASED; urgency=medium
   * debian/changelog:
     + Fix missing changelog items for 1.15.4-0ubuntu1 upload.
 
- -- Martin Wimpress <code@flexion.org>  Fri, 23 Sep 2016 10:46:46 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 01 Oct 2016 16:29:42 +0200
 
 caja (1.15.4-0ubuntu1) yakkety; urgency=medium
 
