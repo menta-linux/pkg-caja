@@ -1,7 +1,13 @@
 caja (1.16.0-1) UNRELEASED; urgency=medium
 
-  * New upstream release. (Closes: #836349, #837889, #838155, #834943,
-  #838108, #836669).
+  [ Martin Wimpress ]
+  * New upstream release.
+    - Various GTK-3.21 incompatibilities fixed. (Closes: #836349, #837889, #838155,
+      #834943, #838108, #836669).
+
+  [ Mike Gabriel ]
+  * debian/changelog:
+    + Fix missing changelog items for 1.15.4-0ubuntu1 upload.
 
  -- Martin Wimpress <code@flexion.org>  Fri, 23 Sep 2016 10:46:46 +0100
 
