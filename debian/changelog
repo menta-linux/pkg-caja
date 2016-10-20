@@ -1,3 +1,15 @@
+caja (1.16.1-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fix regression that sometimes caused visual glitches when selecting
+      icons.
+    - GTK+3: Some CSS adjustments. (Closes: #839799).
+    - GTK+3: Fix accessibility on desktop (for Orca). (Closes: #840568).
+    - GTK+3: Fix several runtime warnings. (Closes: #840422).
+    - Translations update.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 20 Oct 2016 13:17:32 +0200
+
 caja (1.16.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
