@@ -1,3 +1,11 @@
+caja (1.16.2-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/rules:
+    + Enable dh_girespository helper.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 20:15:12 +0100
+
 caja (1.16.2-1) unstable; urgency=medium
 
   * New upstream release.
