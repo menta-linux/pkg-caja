@@ -1,3 +1,14 @@
+caja (1.16.2-1) unstable; urgency=medium
+
+  * New upstream release.
+    - List view: show/hide columns instead of appending/removing them (fixes
+      crash when moving between trash and other folder with GTK+3). (Closes:
+      #834943).
+    - Rename labels: follow theme if available, sane default. (Closes: #851311).
+    - Fix keyboard-down wraparound on compact view. (Closes: #817061).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Jan 2017 17:19:20 +0100
+
 caja (1.16.1-1) unstable; urgency=medium
 
   * New upstream release.
