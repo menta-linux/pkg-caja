@@ -1,0 +1,29 @@
+From 91102344d946f5de702a0323a5c8a4f0789553ce Mon Sep 17 00:00:00 2001
+From: monsta <monsta@inbox.ru>
+Date: Wed, 19 Apr 2017 22:01:13 +0300
+Subject: [PATCH] file: make caja_file_get_gicon return custom icons too
+
+fixes https://github.com/mate-desktop/caja/issues/410
+
+taken from:
+https://git.gnome.org/browse/nautilus/commit/?id=f1c782c13dd675bafffb2a4d85900da52be88f3f
+---
+ libcaja-private/caja-file.c | 5 +++++
+ 1 file changed, 5 insertions(+)
+
+diff --git a/libcaja-private/caja-file.c b/libcaja-private/caja-file.c
+index 6e6603b..2ea025e 100644
+--- a/libcaja-private/caja-file.c
++++ b/libcaja-private/caja-file.c
+@@ -4123,6 +4123,11 @@ caja_file_get_gicon (CajaFile *file,
+ 		return NULL;
+ 	}
+ 
++	icon = get_custom_icon (file);
++	if (icon != NULL) {
++		return icon;
++	}
++
+ 	if (file->details->icon) {
+ 		icon = NULL;
+ 
