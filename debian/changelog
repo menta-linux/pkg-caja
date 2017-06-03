@@ -1,3 +1,23 @@
+caja (1.16.6-1) unstable; urgency=medium
+
+  * New upstream release. (Closes: #862155).
+  * Issues solved between 1.16.2 and 1.16.5:
+    - Caja's background and emblems dialog works again. (Closes: #828158).
+    - Add ability to get feedback from Orca when additional icons are
+      selected/deselected. (Closes: #757851).
+    - In icon and compact view, fix scrolling and renaming in large folders
+      (Closes: #836352, #826261).
+  * Issues solved between 1.16.5 and 1.16.6:
+    - Show correct right-click menu after making file/folder selection
+    - Make custom icons (like folder-color extension) work in list view
+    - Open With dialog: force icon size to avoid huge icons with GTK+3
+    - Load different CSS for desktop with GTK+ 3.14 (fixes black text
+      under desktop icons with some themes like Adwaita)
+  * debian/control:
+    + Versioned B-D bump of libmate-desktop-dev (to >= 1.16.2)
+
+ -- Mike Gabriel <sunweaver@debian.org>  Fri, 28 Apr 2017 22:41:10 +0200
+
 caja (1.16.2-2) unstable; urgency=medium
 
   [ Martin Wimpress ]
