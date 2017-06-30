@@ -1,4 +1,4 @@
-caja (1.18.3-1) UNRELEASED; urgency=medium
+caja (1.18.3-0parrot1) testing; urgency=medium
 
   [ Aron Xu ]
   * New upstream release.
@@ -15,7 +15,16 @@ caja (1.18.3-1) UNRELEASED; urgency=medium
   * debian/patches: Drop 0000_do-not-show-property-browser-in-menu.patch.
     Obsolete.
 
- -- Aron Xu <aron@debian.org>  Wed, 21 Jun 2017 20:15:08 +0800
+  [ Vangelis Mouhtsis ]
+  * New upstream release.
+  * debian/compat:
+    + Update compat version.
+  * debian/control:
+    + Bump debhelper version to (>= 10).
+  * debian/rules:
+    + Add new blog for override_dh_missing.
+
+ -- Vangelis Mouhtsis <vangelis@gnugr.org>  Fri, 30 Jun 2017 10:45:40 +0300
 
 caja (1.16.6-1) unstable; urgency=medium
 
