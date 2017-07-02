@@ -9,9 +9,11 @@ caja (1.18.3-1) UNRELEASED; urgency=medium
   * debian/caja.install: Remove obsolete usr/lib/caja/
   * debian/copyright: Update copyright attributions.
   * debian/control: Dependencies updated for MATE 1.18.
+  * debian/control: Drop dependency on libunique3 (Closes: #827234)
   * debian/patches: Add 0001_return_custom_icons.patch.
   * debian/patches: Drop 0001_return_custom_icons.patch. Applied upstream.
-  * debian/patches: Drop 0000_do-not-show-property-browser-in-menu.patch. Obsolete.
+  * debian/patches: Drop 0000_do-not-show-property-browser-in-menu.patch.
+    Obsolete.
 
  -- Aron Xu <aron@debian.org>  Wed, 21 Jun 2017 20:15:08 +0800
 
