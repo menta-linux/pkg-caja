@@ -23,6 +23,8 @@ caja (1.18.3-0parrot1) testing; urgency=medium
     + Bump debhelper version to (>= 10.3~).
   * debian/rules:
     + Add new block for override_dh_missing.
+  * debian/control:
+    + Bump Standards-Version: to 4.0.0. No changes needed.
 
  -- Vangelis Mouhtsis <vangelis@gnugr.org>  Fri, 30 Jun 2017 10:45:40 +0300
 
