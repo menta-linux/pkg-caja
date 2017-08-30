@@ -1,8 +1,19 @@
-caja (1.18.4-1) UNRELEASED; urgency=medium
+caja (1.18.4-1) unstable; urgency=medium
 
-  * New upstream release. (LP: #1688687)
+  [ Martin Wimpress ]
+  * New upstream release. (LP: #1688687). (Closes: #863752).
+  * debian/patches:
+    + Add 0000_revert_add_column_autosizing.patch. Revert broken 'Adds columns
+      autosizing' commit.
+  * debian/control:
+    + Add B:/R: for gir1.2-caja (<< 1.18.4-1~) to libcaja-extension-dev.
+    + Add typelib dependency (gir1.2-caja) to libcaja-extension-dev.
+    + Make gir1.2-caja Multi-arch: same.
+  * debian/*.install:
+    + Move /usr/share/gir-1.0 from gir1.2-caja to libcaja-extensions-dev
+      bin:pkg.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Sun, 27 Aug 2017 11:22:33 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 30 Aug 2017 14:37:09 +0200
 
 caja (1.18.3-1) unstable; urgency=medium
 
