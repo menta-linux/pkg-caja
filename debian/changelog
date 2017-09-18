@@ -1,3 +1,12 @@
+caja (1.18.4-2) unstable; urgency=medium
+
+  [ Pablo Barciela ]
+  * debian/patches:
+    + Add 0001_fix-high-cpu-while-loading-background-image.patch. (Closes:
+      #875717).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 18 Sep 2017 12:36:33 +0200
+
 caja (1.18.4-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
