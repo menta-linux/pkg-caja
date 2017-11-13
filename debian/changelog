@@ -1,3 +1,9 @@
+caja (1.18.5-1) UNRELEASED; urgency=medium
+
+  * New upstream release.
+
+ -- Martin Wimpress <martin.wimpress@ubuntu.com>  Mon, 13 Nov 2017 18:09:04 +0000
+
 caja (1.18.4-2) unstable; urgency=medium
 
   [ Pablo Barciela ]
