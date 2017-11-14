@@ -1,8 +1,19 @@
-caja (1.18.5-1) UNRELEASED; urgency=medium
+caja (1.18.5-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+  * debian/patches:
+    + Drop 0000_revert_add_column_autosizing.patch and
+           0001_fix-high-cpu-while-loading-background-image.patch.
+      Applied upstream.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Mon, 13 Nov 2017 18:09:04 +0000
+  [ Mike Gabriel ]
+  * debian/control:
+    + Bump Standards-Version: to 4.1.1. No changes needed.
+  * debian/watch:
+    + Use secure URI.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 14 Nov 2017 10:59:41 +0100
 
 caja (1.18.4-2) unstable; urgency=medium
 
