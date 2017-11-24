@@ -38,5 +38,8 @@ override_dh_strip:
 	dh_strip -pcaja --dbgsym-migration='caja-dbg (<< 1.14.1-2~)'
 	dh_strip -plibcaja-extension1 --dbgsym-migration='libcaja-extension1-dbg (<< 1.14.1-2~)'
 
+override_dh_installchangelogs:
+	dh_installchangelogs NEWS
+
 get-orig-source:
 	uscan --noconf --force-download --rename --download-current-version --destdir=..
