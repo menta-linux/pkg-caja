@@ -1,3 +1,16 @@
+caja (1.18.5-2) unstable; urgency=medium
+
+  * Rename GIR package to match Debian Policy.
+
+  * debian/rules:
+    + Use NEWS file as upstream changelog.
+  * debian/{rules,caja-common.install}:
+    + Move ${DATADIR}/appdata to ${DATADIR}/metainfo.
+  * debian/control:
+    + Bump Standards-Version: to 4.1.2. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 13 Dec 2017 15:19:55 +0100
+
 caja (1.18.5-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
