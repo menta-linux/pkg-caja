@@ -1,11 +1,7 @@
 Source: caja
 Section: utils
 Priority: optional
-<<<<<<< HEAD
 Maintainer: Debian+Ubuntu Mate Packaging Team <debian-mate@lists.debian.org>
-=======
-Maintainer: Debian+Ubuntu MATE Packaging Team <pkg-mate-team@lists.alioth.debian.org>
->>>>>>> parent of 018cb9e... debian/control: Rename pretty name of our team -> Debian+Ubuntu Mate Packaging Team.
 Uploaders: John Paul Adrian Glaubitz <glaubitz@physik.fu-berlin.de>,
            Stefano Karapetsas <stefano@karapetsas.com>,
            Mike Gabriel <sunweaver@debian.org>,
