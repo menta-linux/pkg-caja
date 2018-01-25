@@ -562,7 +562,8 @@ Files: libcaja-private/caja-metadata.c
 Copyright: 2009, Red Hat, Inc.
 License: LGPL-2+
 
-Files:  .tx/config
+Files: .github/issue_template.md 
+       .tx/config
        cut-n-paste-code/README
        cut-n-paste-code/libegg/update-from-egg.sh
        data/icons/*.png
