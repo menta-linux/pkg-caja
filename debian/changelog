@@ -1,3 +1,18 @@
+caja (1.20.0-1) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/copyright (already in 1.19.3-0ubuntu1):
+    + Update copyright attributions.
+
+  [ Mike Gabriel ]
+  * debian/control (already in 1.19.3-0ubuntu1):
+    + Capitalize MATE in Maintainer: field.
+  * debian/{control,compat}: Bump DH version level to 11.
+  * debian/patches:
+    Add 1001_use-correct-macros-to-cross-build.patch. Fix cross-building.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sun, 11 Feb 2018 21:10:25 +0100
+
 caja (1.20.0-0ubuntu1) bionic; urgency=medium
 
   * New upstream release.
