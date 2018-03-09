@@ -1,3 +1,17 @@
+caja (1.20.0-2) unstable; urgency=medium
+
+  * Team upload
+
+  [ Mike Gabriel ]
+  * Update 1001_use-correct-macros-to-cross-build.patch:
+    Add check for PKG_CONFIG being set.
+  * debian/copyright: Use secure URI for copyright format.
+
+  [ Jeremy Bicha ]
+  * Move AppStream metadata from caja-common to caja
+
+ -- Jeremy Bicha <jbicha@debian.org>  Fri, 09 Mar 2018 09:14:17 -0500
+
 caja (1.20.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
