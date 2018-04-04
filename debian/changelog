@@ -1,8 +1,15 @@
-caja (1.20.1-1) UNRELEASED; urgency=medium
+caja (1.20.1-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Mon, 26 Mar 2018 15:24:47 +0100
+  [ Mike Gabriel ]
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/source/lintian-overrides:
+    + Move to new/correct location.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 04 Apr 2018 23:29:59 +0200
 
 caja (1.20.0-2) unstable; urgency=medium
 
