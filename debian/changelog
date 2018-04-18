@@ -1,8 +1,12 @@
-caja (1.20.2-1) UNRELEASED; urgency=medium
+caja (1.20.2-1) unstable; urgency=medium
 
+  [ Martin Wimpress ]
   * New upstream release.
+  * debian/patches:
+    + Add 0001_fix_random_segfaults.patch. Fix random segfaults on opening
+      mounts from Desktop.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Thu, 05 Apr 2018 10:30:21 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 12:40:07 +0200
 
 caja (1.20.1-1) unstable; urgency=medium
 
