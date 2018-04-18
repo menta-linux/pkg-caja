@@ -1,3 +1,14 @@
+caja (1.20.2-2) unstable; urgency=medium
+
+  * debian/patches:
+    + Refresh / rebase 0001_fix_random_segfaults.patch.
+    + Add 1002_use-gio-open-instead-of-gvfs-open.patch. Replace deprecated
+      "gvfs-open" by "gio open".
+  * debian/control:
+    + Add to D (caja): libglib2.0-bin (for gio cmdline tool).
+
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 18 Apr 2018 12:57:37 +0200
+
 caja (1.20.2-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
