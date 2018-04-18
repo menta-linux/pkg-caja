@@ -1,11 +1,9 @@
 Author: lukefromdc <lukefromdc@hushmail.com>
 Description: Fix random segfaults on opening mounts from Desktop
 
-diff --git a/src/caja-navigation-window-pane.c b/src/caja-navigation-window-pane.c
-index 91e5da94..aa700830 100644
 --- a/src/caja-navigation-window-pane.c
 +++ b/src/caja-navigation-window-pane.c
-@@ -261,63 +261,21 @@ location_button_create (CajaNavigationWindowPane *pane)
+@@ -259,63 +259,21 @@
  }
  
  static gboolean
@@ -42,14 +40,14 @@ index 91e5da94..aa700830 100644
 -            }
 -        }
 -    }
+-
+-    return FALSE;
+-}
 +path_bar_path_event_callback (CajaPathBar *path_bar,
 +                   GFile *location,
 +                   GdkEventButton *event,
 +                   CajaWindowPane *pane)
  
--    return FALSE;
--}
--
 -static gboolean
 -path_bar_button_released_callback (GtkWidget *widget,
 -                                   GdkEventButton *event,
@@ -78,7 +76,7 @@ index 91e5da94..aa700830 100644
  
          if (event->button == 2 && mask == 0)
          {
-@@ -334,25 +292,24 @@ path_bar_button_released_callback (GtkWidget *widget,
+@@ -332,26 +290,25 @@
              caja_window_slot_info_open_location (slot, location,
                                                   CAJA_WINDOW_OPEN_ACCORDING_TO_MODE,
                                                   flags, NULL);
@@ -103,7 +101,7 @@ index 91e5da94..aa700830 100644
      return FALSE;
  }
  
--static void
+ static void
 -path_bar_button_drag_begin_callback (GtkWidget *widget,
 -                                     GdkEventButton *event,
 -                                     gpointer user_data)
@@ -112,14 +110,14 @@ index 91e5da94..aa700830 100644
 -                       GINT_TO_POINTER (FALSE));
 -}
 -
- static void
+-static void
  notebook_popup_menu_new_tab_cb (GtkMenuItem *menuitem,
      			gpointer user_data)
-@@ -363,46 +320,6 @@ notebook_popup_menu_new_tab_cb (GtkMenuItem *menuitem,
-     caja_window_new_tab (pane->window);
+ {
+@@ -362,46 +319,6 @@
  }
  
--static void
+ static void
 -path_bar_path_set_callback (GtkWidget *widget,
 -                            GFile *location,
 -                            CajaNavigationWindowPane *pane)
@@ -159,10 +157,11 @@ index 91e5da94..aa700830 100644
 -    g_list_free (children);
 -}
 -
- static void
+-static void
  notebook_popup_menu_move_left_cb (GtkMenuItem *menuitem,
                                    gpointer user_data)
-@@ -766,8 +683,9 @@ caja_navigation_window_pane_setup (CajaNavigationWindowPane *pane)
+ {
+@@ -764,8 +681,9 @@
  
      g_signal_connect_object (pane->path_bar, "path_clicked",
                               G_CALLBACK (path_bar_location_changed_callback), pane, 0);
@@ -174,8 +173,6 @@ index 91e5da94..aa700830 100644
  
      gtk_box_pack_start (GTK_BOX (hbox),
                          pane->path_bar,
-diff --git a/src/caja-pathbar.c b/src/caja-pathbar.c
-index 34a8438c..7e2b294a 100644
 --- a/src/caja-pathbar.c
 +++ b/src/caja-pathbar.c
 @@ -31,14 +31,11 @@
@@ -194,7 +191,7 @@ index 34a8438c..7e2b294a 100644
      LAST_SIGNAL
  };
  
-@@ -412,15 +409,16 @@ caja_path_bar_class_init (CajaPathBarClass *path_bar_class)
+@@ -412,15 +409,16 @@
                        g_cclosure_marshal_VOID__OBJECT,
                        G_TYPE_NONE, 1,
                        G_TYPE_FILE);
@@ -219,7 +216,7 @@ index 34a8438c..7e2b294a 100644
  
      gtk_container_class_handle_border_width (container_class);
  }
-@@ -1338,6 +1336,48 @@ button_clicked_cb (GtkWidget *button,
+@@ -1338,6 +1336,48 @@
      g_signal_emit (path_bar, path_bar_signals [PATH_CLICKED], 0, button_data->path);
  }
  
@@ -268,7 +265,7 @@ index 34a8438c..7e2b294a 100644
  static CajaIconInfo *
  get_type_icon_info (ButtonData *button_data)
  {
-@@ -1910,6 +1950,9 @@ make_directory_button (CajaPathBar  *path_bar,
+@@ -1910,6 +1950,9 @@
      caja_path_bar_update_button_state (button_data, current_dir);
  
      g_signal_connect (button_data->button, "clicked", G_CALLBACK (button_clicked_cb), button_data);
@@ -278,7 +275,7 @@ index 34a8438c..7e2b294a 100644
      g_object_weak_ref (G_OBJECT (button_data->button), (GWeakNotify) button_data_free, button_data);
  
      setup_button_drag_source (button_data);
-@@ -2063,8 +2106,6 @@ caja_path_bar_update_path (CajaPathBar *path_bar,
+@@ -2063,8 +2106,6 @@
      path_bar->current_path = g_object_ref (file_path);
      path_bar->current_button_data = current_button_data;
  
@@ -287,11 +284,9 @@ index 34a8438c..7e2b294a 100644
      return result;
  }
  
-diff --git a/src/caja-pathbar.h b/src/caja-pathbar.h
-index 7fbcc786..fef82e7c 100644
 --- a/src/caja-pathbar.h
 +++ b/src/caja-pathbar.h
-@@ -71,15 +71,19 @@ struct _CajaPathBarClass
+@@ -71,15 +71,19 @@
  
      void (* path_clicked)   (CajaPathBar  *path_bar,
                               GFile             *location);
