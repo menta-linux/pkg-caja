@@ -1,2 +1,3 @@
 1001_use-correct-macros-to-cross-build.patch
 0001_fix_random_segfaults.patch
+1002_use-gio-open-instead-of-gvfs-open.patch
