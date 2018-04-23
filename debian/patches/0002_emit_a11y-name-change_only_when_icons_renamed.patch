@@ -1,0 +1,50 @@
+Author: Joanmarie Diggs <jdiggs@igalia.com>
+Description: Emit accessible-name-change signal for icons only when icons are renamed
+ .
+ caja_icon_canvas_item_set_property was emitting accessible-name-change
+ signals whenever the PROP_EDITABLE_TEXT was being set for an icon. This
+ method is called by caja_icon_container_request_update_all when the icon
+ view is first loaded. Thus irrelevant events are being emitted (the name
+ of each icon didn't change, as far as the user is concerned). Furthermore,
+ this floods assistive technologies any time the user opens a folder with
+ a large number of files.
+ .
+ Moving the notification out of caja_icon_canvas_item_set_property and
+ into end_renaming_mode (where ICON_TEXT_CHANGED is also emitted) solves
+ the problem of floods of irrelevant notifications while still emitting
+ the signal when the name actually changes.
+
+diff --git a/libcaja-private/caja-icon-canvas-item.c b/libcaja-private/caja-icon-canvas-item.c
+index 7763811d..6751628b 100644
+--- a/libcaja-private/caja-icon-canvas-item.c
++++ b/libcaja-private/caja-icon-canvas-item.c
+@@ -379,7 +379,6 @@ caja_icon_canvas_item_set_property (GObject        *object,
+         {
+             gail_text_util_text_setup (details->text_util,
+                                        details->editable_text);
+-            g_object_notify (G_OBJECT(accessible), "accessible-name");
+         }
+ 
+         caja_icon_canvas_item_invalidate_label_size (item);
+diff --git a/libcaja-private/caja-icon-container.c b/libcaja-private/caja-icon-container.c
+index 5f941eab..3a434d32 100644
+--- a/libcaja-private/caja-icon-container.c
++++ b/libcaja-private/caja-icon-container.c
+@@ -9078,6 +9078,7 @@ end_renaming_mode (CajaIconContainer *container, gboolean commit)
+ {
+     CajaIcon *icon;
+     const char *changed_text;
++    AtkObject *accessible_icon;
+ 
+     set_pending_icon_to_rename (container, NULL);
+ 
+@@ -9110,6 +9111,9 @@ end_renaming_mode (CajaIconContainer *container, gboolean commit)
+                            signals[ICON_TEXT_CHANGED], 0,
+                            icon->data,
+                            changed_text);
++
++	    accessible_icon = atk_gobject_accessible_for_object (G_OBJECT(icon->item));
++	    g_object_notify (G_OBJECT(accessible_icon), "accessible-name");
+         }
+     }
+ 
