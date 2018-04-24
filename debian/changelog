@@ -1,3 +1,12 @@
+caja (1.20.2-3) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add 0002_emit_a11y-name-change_only_when_icons_renamed.patch.
+      Emit accessible-name-change signal for icons only when icons are renamed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Tue, 24 Apr 2018 09:37:00 +0200
+
 caja (1.20.2-2) unstable; urgency=medium
 
   * debian/patches:
