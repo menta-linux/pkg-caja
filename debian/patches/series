@@ -2,3 +2,4 @@
 0001_fix_random_segfaults.patch
 1002_use-gio-open-instead-of-gvfs-open.patch
 0002_emit_a11y-name-change_only_when_icons_renamed.patch
+0003_eliminate_a11y_event_flood.patch
