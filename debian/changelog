@@ -1,3 +1,14 @@
+caja (1.20.3-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/control:
+    + Use secure URL in Homepage: field.
+    + Bump Standards-Version: to 4.2.1. No changes needed.
+  * debian/libcaja-extension1.symbols:
+    + Add Build-Depends-Package: meta data field.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 22 Dec 2018 22:55:10 +0100
+
 caja (1.20.2-5) unstable; urgency=medium
 
   * debian/control:
