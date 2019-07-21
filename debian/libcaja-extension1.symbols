@@ -41,6 +41,8 @@ libcaja-extension.so.1 libcaja-extension1 #MINVER#
  caja_file_info_get_name@Base 1.6.3
  caja_file_info_get_parent_uri@Base 1.6.3
  caja_column_provider_get_type@Base 1.6.3
+ caja_configurable_get_type@Base 1.22.1
+ caja_configurable_run_config@Base 1.22.1
  caja_menu_provider_get_background_items@Base 1.6.3
  caja_file_info_is_directory@Base 1.6.3
  caja_file_info_get_parent_location@Base 1.6.3
