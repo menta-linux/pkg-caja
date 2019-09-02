@@ -1,3 +1,12 @@
+caja (1.22.1-2) unstable; urgency=medium
+
+  [ Martin Wimpress ]
+  * debian/patches:
+    + Add Add 0001_keep_timestamps.patch. Copy file and keep timestamps
+      of original file including remotes.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Mon, 02 Sep 2019 16:14:09 +0200
+
 caja (1.22.1-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
