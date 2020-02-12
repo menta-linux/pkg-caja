@@ -280,6 +280,13 @@ Files: libegg/eggtreemultidnd.c
 Copyright: 2001-2009, Red Hat, Inc.
 License: LGPL-2+
 
+Files: libcaja-extension/caja-widget-view-provider.c
+       libcaja-extension/caja-widget-view-provider.h
+       src/file-manager/fm-widget-view.c
+       src/file-manager/fm-widget-view.h
+Copyright: 2019, Wu Xiaotian <yetist@gmail.com>
+License: LGPL-2+
+
 Files: eel/eel-canvas-rect-ellipse.c
        eel/eel-canvas-rect-ellipse.h
        eel/eel-canvas.c
@@ -565,10 +572,11 @@ Copyright: 2009, Red Hat, Inc.
 License: LGPL-2+
 
 Files: .github/issue_template.md
+       .github/FUNDING.yml
        .travis.yml
        .tx/config
        README
-       data/icons/*.png       
+       data/icons/*.png
        data/patterns/*.png
        data/patterns/*.jpg
        data/caja.xml.in
@@ -581,8 +589,14 @@ Files: .github/issue_template.md
        docs/*
        eel/README
        eel/check-eel
+       git.mk
+       gla11y.mk
        icons/*.svg
        icons/*.png
+       its/browser.its
+       its/browser.loc
+       its/mimeinfo.its
+       its/mimeinfo.loc
        libcaja-extension/caja-extension-i18n.h
        libcaja-extension/*.pc.in
        libcaja-private/README
@@ -591,15 +605,16 @@ Files: .github/issue_template.md
        libcaja-private/caja-recent.h
        libcaja-private/*.xml
        makepot
+       po/Makevars
        po/LINGUAS
        po/POTFILES.*
        src/file-manager/caja-audio-mime-types.h
        src/file-manager/*.xml
        src/caja.about
        src/check-caja
+       src/ui-a11y.suppr
        src/*.ui
        src/*.xml
-       src/*.desktop.in
        test/test-caja-directory-async.c
        test/test-caja-search-engine.c
        test/test-caja-wrap-table.c
@@ -625,9 +640,6 @@ Files: .github/issue_template.md
        src/Makefile.am
        test/Makefile.am
        AUTHORS
-       COPYING
-       COPYING.EXTENSIONS
-       COPYING.LIB
        ChangeLog
        HACKING
        Makefile.am
