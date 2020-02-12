@@ -9,6 +9,8 @@ caja (1.24.0-1) UNRELEASED; urgency=medium
 
   [ Martin Wimpress ]
   * New upstream release.
+  * debian/patches:
+    + Drop 0001_keep_timestamps.patch. Applied upstream.
 
  -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 12 Feb 2020 11:14:00 +0000
 
