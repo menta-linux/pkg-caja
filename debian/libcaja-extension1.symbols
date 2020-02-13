@@ -58,3 +58,12 @@ libcaja-extension.so.1 libcaja-extension1 #MINVER#
  caja_menu_get_type@Base 1.6.3
  caja_menu_provider_get_type@Base 1.6.3
  caja_menu_append_item@Base 1.6.3
+ caja_widget_view_provider_add_file@Base 1.24.0
+ caja_widget_view_provider_clear@Base 1.24.0
+ caja_widget_view_provider_get_first_visible_file@Base 1.24.0
+ caja_widget_view_provider_get_item_count@Base 1.24.0
+ caja_widget_view_provider_get_type@Base 1.24.0
+ caja_widget_view_provider_get_widget@Base 1.24.0
+ caja_widget_view_provider_set_location@Base 1.24.0
+ caja_widget_view_provider_set_window@Base 1.24.0
+ caja_widget_view_provider_supports_uri@Base 1.24.0
