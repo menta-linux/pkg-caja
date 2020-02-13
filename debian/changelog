@@ -1,4 +1,4 @@
-caja (1.24.0-1) UNRELEASED; urgency=medium
+caja (1.24.0-1) unstable; urgency=medium
 
   [ Mike Gabriel ]
   * debian/control:
@@ -6,13 +6,19 @@ caja (1.24.0-1) UNRELEASED; urgency=medium
   * debian/upstream/metadata:
     + Drop obsolete fields Contact: and Name:.
     + Append .git suffix to URLs in Repository: field.
+  * debian/libcaja-extension1.symbols:
+    + Update symbols.
 
   [ Martin Wimpress ]
   * New upstream release.
   * debian/patches:
     + Drop 0001_keep_timestamps.patch. Applied upstream.
+  * debian/copyright:
+    + Update copyright attributions.
+  * debian/control:
+     + Update Build-Depends: to support MATE Desktop 1.24.
 
- -- Martin Wimpress <martin.wimpress@ubuntu.com>  Wed, 12 Feb 2020 11:14:00 +0000
+ -- Mike Gabriel <sunweaver@debian.org>  Thu, 13 Feb 2020 11:48:13 +0100
 
 caja (1.22.3-1) unstable; urgency=medium
 
