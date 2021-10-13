@@ -1,0 +1,13 @@
+diff --git a/libcaja-private/caja-directory-async.c b/libcaja-private/caja-directory-async.c
+index 0c9a6ba77..8a9c021ce 100644
+--- a/libcaja-private/caja-directory-async.c
++++ b/libcaja-private/caja-directory-async.c
+@@ -3850,7 +3850,7 @@ is_link_trusted (CajaFile *file,
+         return TRUE;
+     }
+ 
+-    if (caja_file_can_execute (file) && caja_file_is_local (file))
++    if (caja_file_is_local (file))
+     {
+         GFile *location;
+ 
