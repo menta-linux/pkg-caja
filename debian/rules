@@ -16,6 +16,8 @@ override_dh_install:
 	rm -fv debian/tmp/usr/lib/*/*.la
 	rm -rfv debian/tmp/usr/share/omf/
 	rm -rfv debian/tmp/usr/share/help/
+	mkdir -p debian/tmp/usr/share/doc/libcaja-extension-doc/
+	mv debian/tmp/usr/share/gtk-doc/html/libcaja-extension debian/tmp/usr/share/doc/libcaja-extension-doc/html
 	dh_install
 
 override_dh_auto_configure:
