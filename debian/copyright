@@ -45,6 +45,12 @@ Files: eel/check-program.c
 Copyright: 1999-2001, Eazel, Inc.
 License: LGPL-2+
 
+Files: src/caja-bookmarks-sidebar.c
+       src/caja-bookmarks-sidebar.h
+Copyright: 2020, Gordon N. Squash.
+           2012-2021, The MATE developers
+License: GPL-2+
+
 Files: libcaja-private/caja-bookmark.c
        libcaja-private/caja-bookmark.h
        libcaja-private/caja-customization-data.c
@@ -174,11 +180,7 @@ Files: libcaja-private/caja-autorun.c
 Copyright: 2000-2011, Red Hat, Inc
 License: GPL-2+
 
-Files: libegg/eggdesktopfile.h
-       libegg/eggsmclient-private.h
-       libegg/eggsmclient.c
-       libegg/eggsmclient.h
-       libcaja-extension/caja-column-provider.c
+Files: libcaja-extension/caja-column-provider.c
        libcaja-extension/caja-column-provider.h
        libcaja-extension/caja-column.c
        libcaja-extension/caja-column.h
@@ -270,9 +272,7 @@ Files: libcaja-private/caja-sidebar-provider.c
 Copyright: 2004, Red Hat, Inc.
 License: GPL-2+
 
-Files: libegg/eggtreemultidnd.c
-       libegg/eggtreemultidnd.h
-       libcaja-extension/caja-extension-private.h
+Files: libcaja-extension/caja-extension-private.h
        libcaja-extension/caja-location-widget-provider.c
        libcaja-private/caja-ui-utilities.c
        libcaja-private/caja-ui-utilities.h
@@ -517,12 +517,6 @@ Files: eel/eel-accessibility.c
 Copyright: 2002, Anders Carlsson, Sun Microsystems, Inc.
 License: LGPL-2+
 
-Files: libegg/eggsmclient-xsmp.c
-Copyright: 1998, Carsten Schaar
-           1998, The Open Group
-           2007, Novell, Inc.
-License: LGPL-2+
-
 Files: libcaja-private/caja-icon-container.c
 Copyright: 1999-2000, Free Software Foundation, Inc.
            2000-2001, Eazel, Inc.
@@ -531,12 +525,6 @@ License: LGPL-2+
 
 Files: src/file-manager/fm-desktop-icon-view.c
 Copyright: 2000-2001, Eazel, Inc.
-License: LGPL-2+
-
-Files: libegg/eggdesktopfile.c
-Copyright: 1999-2000, Red Hat, Inc.
-           2001, George Lebl
-           2007, Novell, Inc.
 License: LGPL-2+
 
 Files: libcaja-extension/caja-menu.h
@@ -571,15 +559,16 @@ Files: libcaja-private/caja-metadata.c
 Copyright: 2009, Red Hat, Inc.
 License: LGPL-2+
 
-Files: .github/issue_template.md
+Files: .build.yml
+       .github/issue_template.md
        .github/FUNDING.yml
+       .gitmodules
        .travis.yml
        .tx/config
-       README
+       data/caja.appdata.xml.in.in
        data/icons/*.png
        data/patterns/*.png
        data/patterns/*.jpg
-       data/caja.xml.in
        data/*.css
        data/*.desktop*
        data/*.service*
@@ -597,7 +586,6 @@ Files: .github/issue_template.md
        its/browser.loc
        its/mimeinfo.its
        its/mimeinfo.loc
-       libcaja-extension/caja-extension-i18n.h
        libcaja-extension/*.pc.in
        libcaja-private/README
        libcaja-private/caja-icon-info.h
@@ -609,7 +597,6 @@ Files: .github/issue_template.md
        po/LINGUAS
        po/POTFILES.*
        src/file-manager/caja-audio-mime-types.h
-       src/file-manager/*.xml
        src/caja.about
        src/check-caja
        src/ui-a11y.suppr
@@ -626,12 +613,10 @@ Files: .github/issue_template.md
        test/test-eel-pixbuf-scale.c
        test/test.c
        test/test.h
-       libegg/Makefile.am
        Makefile.am
        data/icons/Makefile.am
        data/Makefile.am
        data/patterns/Makefile.am
-       docs/Makefile.am
        eel/Makefile.am
        icons/Makefile.am
        libcaja-extension/Makefile.am
@@ -642,7 +627,6 @@ Files: .github/issue_template.md
        AUTHORS
        ChangeLog
        HACKING
-       Makefile.am
        Makefile.shared
        NEWS
        README
