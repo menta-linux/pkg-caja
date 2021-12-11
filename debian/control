@@ -26,6 +26,7 @@ Build-Depends: debhelper-compat (= 13),
                libx11-dev,
                libxml2-dev,
                mate-common (>= 1.18),
+               mate-submodules-source (>= 0.0~git20210623.f3091f9),
                quilt,
                shared-mime-info,
 Standards-Version: 4.6.0
