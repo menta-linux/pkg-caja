@@ -1,3 +1,11 @@
+caja (1.26.1-1) unstable; urgency=medium
+
+  * New upstream release.
+  * debian/patches:
+    + Drop 0001_fix-caja-not-showing-icons.patch. Applied upstream.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 23 Jul 2022 23:32:12 +0200
+
 caja (1.26.0-1) unstable; urgency=medium
 
   [ Martin Wimpress ]
