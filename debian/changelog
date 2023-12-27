@@ -1,8 +1,12 @@
-caja (1.26.3-1) UNRELEASED; urgency=medium
+caja (1.26.3-1) unstable; urgency=medium
 
   * New upstream release.
+  * debian/copyright:
+    + Update copyright attribution for debian/.
+  * debian/control:
+    + Bump Standards-Version: to 4.6.2. No changes needed.
 
- -- Mike Gabriel <sunweaver@debian.org>  Wed, 27 Dec 2023 13:20:08 +0100
+ -- Mike Gabriel <sunweaver@debian.org>  Wed, 27 Dec 2023 13:23:02 +0100
 
 caja (1.26.1-1) unstable; urgency=medium
 
