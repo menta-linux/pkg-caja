@@ -29,7 +29,7 @@ Build-Depends: debhelper-compat (= 13),
                mate-submodules-source (>= 0.0~git20210623.f3091f9),
                quilt,
                shared-mime-info,
-Standards-Version: 4.6.0
+Standards-Version: 4.6.2
 Rules-Requires-Root: no
 Homepage: https://mate-desktop.org/
 Vcs-Browser: https://salsa.debian.org/debian-mate-team/caja
