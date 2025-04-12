@@ -1,3 +1,14 @@
+caja (1.26.4-1) unstable; urgency=medium
+
+  * New upstream release.
+    - Fix gfile sort and symlink warnings w glib2.76 or later. (Closes:
+      #1102686).
+    - Fix building with libxml 2.12.0
+  * debian/control:
+    + Bump Standards-Version: to 4.7.2. No changes needed.
+
+ -- Mike Gabriel <sunweaver@debian.org>  Sat, 12 Apr 2025 11:29:42 +0200
+
 caja (1.26.3-1) unstable; urgency=medium
 
   * New upstream release.
