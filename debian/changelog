@@ -1,3 +1,11 @@
+caja (1.26.4-2) unstable; urgency=medium
+
+  * Team upload
+  * Update gir handling
+  * Remove obsolete Breaks and Replaces
+
+ -- Jeremy Bícha <jbicha@ubuntu.com>  Tue, 21 Oct 2025 14:20:46 -0400
+
 caja (1.26.4-1) unstable; urgency=medium
 
   * New upstream release.
