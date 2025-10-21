@@ -54,11 +54,6 @@ Recommends: gvfs-backends,
 Suggests: engrampa,
           gstreamer1.0-tools,
           meld,
-Breaks: caja-common (<< 1.20.0-2~),
-        libcaja-extension (<< 1.10.0),
-        libcaja-extension1 (<< 1.10.0),
-        mate-session-manager (<< 1.8.1-7),
-Replaces: caja-common (<< 1.20.0-2~)
 Description: file manager for the MATE desktop
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
@@ -69,8 +64,6 @@ Package: caja-common
 Architecture: all
 Multi-Arch: foreign
 Depends: ${misc:Depends},
-Replaces: caja (<< 1.9.0),
-Breaks: caja (<< 1.9.0),
 Description: file manager for the MATE desktop (common files)
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
@@ -86,8 +79,6 @@ Multi-Arch: same
 Pre-Depends: ${misc:Pre-Depends},
 Depends: ${misc:Depends},
          ${shlibs:Depends},
-Replaces: libcaja-extension (<< 1.7.0),
-Breaks: libcaja-extension (<< 1.7.0),
 Provides: libcaja-extension,
 Description: libraries for Caja components
  Caja is the official file manager for the MATE desktop. It allows one
@@ -107,8 +98,6 @@ Depends: libcaja-extension1 (= ${binary:Version}),
          ${gir:Depends},
          ${misc:Depends},
 Provides: ${gir:Provides}
-Breaks: gir1.2-caja (<< 1.18.4-1~),
-Replaces: gir1.2-caja (<< 1.18.4-1~),
 Description: libraries for Caja components (development files)
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
@@ -122,7 +111,6 @@ Package: libcaja-extension-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends},
-Breaks: libcaja-extension-dev (<< 1.12.3-2~),
 Description: libraries for Caja components (API documentation files)
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
@@ -138,9 +126,6 @@ Architecture: any
 Multi-Arch: same
 Depends: ${gir:Depends},
          ${misc:Depends},
-         ${shlibs:Depends},
-Breaks: gir1.2-caja (<< 1.18.5-2~),
-Replaces: gir1.2-caja (<< 1.18.5-2~),
 Description: GObject introspection data for Caja
  Caja is the official file manager for the MATE desktop. It allows one
  to browse directories, preview files and launch applications associated
