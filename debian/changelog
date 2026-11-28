@@ -1,3 +1,25 @@
+caja (1.29.1-1menta2) unstable; urgency=medium
+
+  * Apply upstream caja PR #1927 (Wayland: multimonitor desktop and
+    background handling) as patch 0201; one hunk adapted by hand for
+    1.29.1.
+  * debian/rules: --enable-wayland=yes so configure fails if gtk-layer-
+    shell/wayland-client are missing.
+
+ -- Menta Linux <packages@menta-linux.invalid>  Sun, 22 Nov 2026 20:54:53 -0700
+
+caja (1.29.1-1menta1) unstable; urgency=medium
+
+  * Menta Linux rebuild: new upstream release 1.29.1 (development
+    snapshot).
+  * debian/control: Build-Depend on libgtk-layer-shell-dev (>= 0.8.0)
+    and libwayland-dev.
+  * debian/rules: Build with --enable-wayland (gtk-layer-shell based
+    desktop/Wayland support).
+  * debian/watch: Track GitHub releases.
+
+ -- Menta Linux <packages@menta-linux.invalid>  Sat, 14 Nov 2026 17:04:17 -0700
+
 caja (1.26.4-2) unstable; urgency=medium
 
   * Team upload
