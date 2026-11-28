@@ -1,3 +1,10 @@
+caja (1.29.2-1menta1) unstable; urgency=medium
+
+  * New upstream release 1.29.2.
+  * Drop Menta's patch 0201 (Wayland multimonitor desktop handling, upstream PR #1927): no longer carried; no patches remain.
+
+ -- Menta Linux <packages@menta-linux.invalid>  Fri, 27 Nov 2026 21:30:00 -0700
+
 caja (1.29.1-1menta2) unstable; urgency=medium
 
   * Apply upstream caja PR #1927 (Wayland: multimonitor desktop and
